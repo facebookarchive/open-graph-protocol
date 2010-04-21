@@ -9,7 +9,7 @@ While many different technologies and schemas exist and could be combined togeth
 <a name="metadata"></a>
 Basic metadata
 --
-To Open Graph-enable your page, you need to add basic metadata to your page. We've chosen to use [RDFa](http://en.wikipedia.org/wiki/RDFa) which means that you'll place additional `<meta>` tags in the `<head>` of your web page. The four required properties for every Open Graph page are:
+To turn your web pages into graph objects, you need to add basic metadata to your page. We've based the initial version of the protocol on [RDFa](http://en.wikipedia.org/wiki/RDFa) which means that you'll place additional `<meta>` tags in the `<head>` of your web page. The four required properties for every page are:
 
  * `og:title` - The title of your object as it should appear within the graph, e.g., "The Rock".
  * `og:type` - The [type](#types) of your object, e.g., "movie".  Depending on the type you specify, other properties may also be required.
@@ -30,7 +30,7 @@ As an example, the following is the Open Graph protocol markup for [The Rock on 
 	...
 	</html>
 
-The following properties are optional for any object:
+The following properties are optional for any object and are generally recommended:
 
  * `og:description` - A one to two sentence description of your object.
  * `og:site_name` - If your object is part of a larger web site, the name which should be displayed for the overall site. e.g., "IMDb".
@@ -41,6 +41,7 @@ For example (line-break solely for display purposes):
 	<meta property="og:description" content="Sean Connery found fame and fortune as the
 	suave, sophisticated British agent, James
 	Bond." />
+	<meta property="og:site_name" content="IMDb" />
 
 
 ------
@@ -159,6 +160,8 @@ The base schema includes the following types. It's possible that social networks
 * `song`
 * `tv_show`
 
+For products which have a UPC code or ISBN number, you can specify them using the `og:upc` and `og:isbn` properties. These properties help to make more concrete connections between graphs.
+
 ### Websites
 * `blog`
 * `website`
@@ -167,4 +170,4 @@ The base schema includes the following types. It's possible that social networks
 ------
 Discussion and support
 -----
-You can discuss the Open Graph Protocol on [the developer mailing list](http://groups.google.com/group/open-graph-protocol). It is currently supported by [Facebook](http://d2.dev.facebook.com/docs/opengraph), etc.
+You can discuss the Open Graph Protocol on [the developer mailing list](http://groups.google.com/group/open-graph-protocol). It is currently being consumed by Facebook ([see their documentation](http://developers.facebook.com/docs/opengraph)) and is being published by ABC, Fandango, IMDb, Microsoft, Posterous, Scribd, TypePad, Yelp, and others.
