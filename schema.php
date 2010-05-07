@@ -13,6 +13,8 @@
  xmlns:og="http://opengraphprotocol.org/schema/"
  xmlns:foaf="http://xmlns.com/foaf/0.1/"
  xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:sioc="http://rdfs.org/sioc/ns#"
+ xmlns:sioct="http://rdfs.org/sioc/types#"
  xml:base="http://opengraphprotocol.org/schema/"
  xml:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
  xml:vcard="http://www.w3.org/2006/vcard/ns#">
@@ -28,97 +30,137 @@
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Band">
   <rdfs:label xml:lang="en-US">Band</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Governmental">
      <rdfs:label xml:lang="en-US">Governmental</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Non_profit">
      <rdfs:label xml:lang="en-US">Non profit</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/School">
      <rdfs:label xml:lang="en-US">School</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/University">
      <rdfs:label xml:lang="en-US">University</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Actor">
  <rdfs:label xml:lang="en-US">Actor</rdfs:label>
  <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
  <owl:equivalentClass rdf:resource="http://dbpedia.org/resource/Actor"/>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Athlete">
   <rdfs:label xml:lang="en-US">Athlete</rdfs:label>
   <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
   <owl:equivalentClass rdf:resource="http://dbpedia.org/resource/Athlete"/>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Author">
   <rdfs:label xml:lang="en-US">Author</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Director">
   <rdfs:label xml:lang="en-US">Director</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Musician">
   <rdfs:label xml:lang="en-US">Musician</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Poltician">
   <rdfs:label xml:lang="en-US">Politician</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Public_figure">
   <rdfs:label xml:lang="en-US">Public Figure</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/City">
   <rdfs:label xml:lang="en-US">City</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Country">
   <rdfs:label xml:lang="en-US">Country</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Landmark">
   <rdfs:label xml:lang="en-US">Landmark</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/State_province">
   <rdfs:label xml:lang="en-US">State or Province</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Album">
   <rdfs:label xml:lang="en-US">Album</rdfs:label>
   <owl:equivalentClass rdf:resource="http://dbpedia.org/resource/Album"/>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Book">
   <rdfs:label xml:lang="en-US">Book</rdfs:label>
   <owl:equivalentClass rdf:resource="http://purl.org/ontology/bibo/Book"/>
   <owl:equivalentClass rdf:resource="http://dbpedia.org/resource/Book"/>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Drink">
   <rdfs:label xml:lang="en-US">Drink</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Food">
   <rdfs:label xml:lang="en-US">Food</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Game">
   <rdfs:label xml:lang="en-US">Game</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 <rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Movie">
   <rdfs:label xml:lang="en-US">Movie</rdfs:label>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Website">
+  <rdfs:label xml:lang="en-US">Website</rdfs:label>
+  <rdfs:seeAlso rdf:resource="http://rdfs.org/sioc/ns#Site"/>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Blog">
+  <rdfs:label xml:lang="en-US">Blog</rdfs:label>
+  <rdfs:seeAlso rdf:resource="http://rdfs.org/sioc/types#Weblog"/>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Article">
+  <rdfs:label xml:lang="en-US">Article</rdfs:label>
+  <rdfs:seeAlso rdf:resource="http://rdfs.org/sioc/ns#Post"/>
+ <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
 
