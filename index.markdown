@@ -1,12 +1,12 @@
 Introduction
 ----
-The [Open Graph protocol](http://www.opengraphprotocol.org/) enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to enable any web page to have the same functionality as a [Facebook Page](http://www.facebook.com/advertising/?pages).
+The [Open Graph protocol](http://www.opengraphprotocol.org/) enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to enable any web page to have the same functionality as a Facebook Page.
 
-While many different technologies and schemas exist and could be combined together, there isn't a single technology which provides enough information to richly represent any web page within the social graph. The Open Graph protocol builds on these existing technologies and gives developers one thing to implement.
+While many different technologies and schemas exist and could be combined together, there isn't a single technology which provides enough information to richly represent any web page within the social graph. The Open Graph protocol builds on these existing technologies and gives developers one thing to implement. Developer simplicity is a key goal of the Open Graph protocol which has informed many of the technical design decisions.
 
 
 ------
-<a name="metadata"></a>
+<a id="metadata"></a>
 Basic metadata
 --
 To turn your web pages into graph objects, you need to add basic metadata to your page. We've based the initial version of the protocol on [RDFa](http://en.wikipedia.org/wiki/RDFa) which means that you'll place additional `<meta>` tags in the `<head>` of your web page. The four required properties for every page are:
@@ -39,13 +39,13 @@ For example (line-break solely for display purposes):
 
 	<meta property="og:type" content="actor" />
 	<meta property="og:description" content="Sean Connery found fame and fortune as the
-	suave, sophisticated British agent, James
-	Bond." />
+                                             suave, sophisticated British agent, James
+                                             Bond." />
 	<meta property="og:site_name" content="IMDb" />
 
 
 ------
-<a name="location"></a>
+<a id="location"></a>
 Specifying location
 -----
 The Open Graph protocol supports the ability for you to specify location information for your object. This is useful if your object is for a business or anything else with a real-world location. You can specify location via latitude and longitude, a full address, or both. The property names used are defined within the [Microformat hCard](http://microformats.org/wiki/hcard).
@@ -55,7 +55,7 @@ In order to specify latitude and longitude, include the following two properties
 * `og:latitude` - e.g., "37.416343".
 * `og:longitude` - e.g., "-122.153013".
 
-If you wish to specify a human readable address, include the following four properties:
+If you wish to specify a human readable address, include the following five properties:
 
 * `og:street-address` - e.g., "1601 S California Ave"
 * `og:locality` - e.g, "Palo Alto"
@@ -80,7 +80,7 @@ For example:
 
 
 ------
-<a name="contact"></a>
+<a id="contact"></a>
 Specifying contact information
 -----
 The Open Graph protocol supports the ability for you to specify contact information for your object. It's likely that future versions of the protocol will support extracting this information from the body of your page. In order to specify contact information, include at least one of the following three properties:
@@ -102,7 +102,7 @@ For example:
 
 
 ------
-<a name="types"></a>
+<a id="types"></a>
 Object types
 ----
 In order for your object to be represented within the graph, you need to specify its type. This is done using the `og:type` property:
@@ -163,11 +163,34 @@ The base schema includes the following types. It's possible that social networks
 For products which have a UPC code or ISBN number, you can specify them using the `og:upc` and `og:isbn` properties. These properties help to make more concrete connections between graphs.
 
 ### Websites
+* `article`
 * `blog`
 * `website`
 
 
+<a id='discuss'></a>
 ------
 Discussion and support
 -----
-You can discuss the Open Graph Protocol on [the developer mailing list](http://groups.google.com/group/open-graph-protocol). It is currently being consumed by Facebook ([see their documentation](http://developers.facebook.com/docs/opengraph)) and is being published by ABC, Fandango, IMDb, Microsoft, Posterous, Scribd, TypePad, Yelp, and others.
+You can discuss the Open Graph Protocol on [the developer mailing list](http://groups.google.com/group/open-graph-protocol). It is currently being consumed by Facebook ([see their documentation](http://developers.facebook.com/docs/opengraph)) and is being published by IMDb, Microsoft, NHL, Posterous, Rotten Tomatoes, TIME, Yelp, and others.
+
+
+<a id='implementations'></a>
+------
+Implementations
+----
+The open source community has developed a number of parsers and publishing tools. Let the mailing list know if you've built something awesome too!
+
+* [og:it](http://ogit.heroku.com/) - web service which parses web pages for Open Graph protocol markup
+* [OpenGraph.in](http://www.opengraph.in/) - another web service which parses web pages for Open Graph protocol markup and outputs HTML and JSON
+* [Open Graph Protocol to JSON](http://srv.buzzword.org.uk/opengraph-to-json.html) - web service which converts Open Graph protocol markup to JSON for testing
+* [OpenGraph for Java](http://github.com/callumj/opengraph-java) - small Java class used to represent the Open Graph protocol
+* [RDF::RDFa::Parser](http://search.cpan.org/~tobyink/RDF-RDFa-Parser/lib/RDF/RDFa/Parser.pm) - Perl RDFa parser which understands the Open Graph protocol
+* [Open Graph Protocol helper for PHP](http://github.com/scottmac/opengraph) - a small library for making accessing of Open Graph Protocol data easier in PHP
+* [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) - PyOpenGraph is a library written in Python for parsing Open Graph protocol information from web sites.
+* [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) - a simple parsers for PHP
+* [OpenGraph Ruby](http://github.com/intridea/opengraph) - Ruby Gem which parses web pages and extracts Open Graph protocol markup
+* [Kestrel Open Graph (kog)](http://johnwyles.com/2010/05/04/kog-a-ruby-implementation-of-the-open-graph-protocol-by-facebook/) - Another Ruby Gem!
+* [WordPress plugin](http://github.com/artlung/Open-Graph-Protocol-Plugin-for-WordPress/) - add the Open Graph protocol markup to your WordPress blog
+
+------
