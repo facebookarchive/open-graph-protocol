@@ -82,7 +82,7 @@
  <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
 
-<rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Poltician">
+<rdfs:Class rdf:about="http://opengraphprotocol.org/schema/Politician">
   <rdfs:label xml:lang="en-US">Politician</rdfs:label>
  <rdfs:isDefinedBy rdf:resource="http://opengraphprotocol.org/schema/"/>
 </rdfs:Class>
