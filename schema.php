@@ -22,7 +22,7 @@
 <owl:Ontology rdf:about="http://opengraphprotocol.org/schema/">
   <dc:title xml:lang="en-US">Open Graph Protocol Schema</dc:title>
   <dc:description xml:lang="en-US">Schema for the Open Graph protocol.</dc:description>
-  <dc:date rdf:datatype="http://www.w3.org/1999/XMLSchema#date">2010-04-29</dc:date>
+  <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-04-29</dc:date>
 </owl:Ontology>
 
 
