@@ -18,7 +18,7 @@ To turn your web pages into graph objects, you need to add basic metadata to you
 
 As an example, the following is the Open Graph protocol markup for [The Rock on IMDB](http://www.imdb.com/title/tt0117500):
 
-	<html xmlns:og="http://opengraphprotocol.org/schema/">
+	<html xmlns:og="http://ogp.me/ns#">
 	<head>
 	<title>The Rock (1996)</title>
 	<meta property="og:title" content="The Rock" />
@@ -65,7 +65,7 @@ If you wish to specify a human readable address, include the following five prop
 
 For example:
 
-	<html xmlns:og="http://opengraphprotocol.org/schema/">
+	<html xmlns:og="http://ogp.me/ns#">
 	<head>
 	...
 	<meta property="og:latitude" content="37.416343" />
@@ -91,7 +91,7 @@ The Open Graph protocol supports the ability for you to specify contact informat
 
 For example:
 
-	<html xmlns:og="http://opengraphprotocol.org/schema/">
+	<html xmlns:og="http://ogp.me/ns#">
 	<head>
 	...
 	<meta property="og:email" content="me@example.com" />
