@@ -2,7 +2,7 @@ Introduction
 ----
 The [Open Graph protocol](http://www.opengraphprotocol.org/) enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to enable any web page to have the same functionality as a Facebook Page.
 
-While many different technologies and schemas exist and could be combined together, there isn't a single technology which provides enough information to richly represent any web page within the social graph. The Open Graph protocol builds on these existing technologies and gives developers one thing to implement. Developer simplicity is a key goal of the Open Graph protocol which has informed many of the technical design decisions.
+While many different technologies and schemas exist and could be combined together, there isn't a single technology which provides enough information to richly represent any web page within the social graph. The Open Graph protocol builds on these existing technologies and gives developers one thing to implement. Developer simplicity is a key goal of the Open Graph protocol which has informed many of [the technical design decisions](http://www.scribd.com/doc/30715288/The-Open-Graph-Protocol-Design-Decisions).
 
 
 ------
@@ -169,6 +169,7 @@ For products which have a UPC code or ISBN number, you can specify them using th
 
 
 <a id='discuss'></a>
+
 ------
 Discussion and support
 -----
@@ -176,7 +177,6 @@ You can discuss the Open Graph Protocol on [the developer mailing list](http://g
 
 
 <a id='implementations'></a>
-------
 Implementations
 ----
 The open source community has developed a number of parsers and publishing tools. Let the mailing list know if you've built something awesome too!
@@ -191,6 +191,6 @@ The open source community has developed a number of parsers and publishing tools
 * [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) - a simple parsers for PHP
 * [OpenGraph Ruby](http://github.com/intridea/opengraph) - Ruby Gem which parses web pages and extracts Open Graph protocol markup
 * [Kestrel Open Graph (kog)](http://johnwyles.com/2010/05/04/kog-a-ruby-implementation-of-the-open-graph-protocol-by-facebook/) - Another Ruby Gem!
-* [WordPress plugin](http://github.com/artlung/Open-Graph-Protocol-Plugin-for-WordPress/) - add the Open Graph protocol markup to your WordPress blog
+* [WordPress plugin](http://wordpress.org/extend/plugins/like) - add the Open Graph protocol markup to your WordPress blog
 
 ------
