@@ -43,6 +43,8 @@ For example (line-break solely for display purposes):
                                              Bond." />
 	<meta property="og:site_name" content="IMDb" />
 
+The RDF schema (which relates the Open Graph Protocol to other schemas) can be found at [http://opengraphprotocol.org/schema](http://opengraphprotocol.org/schema/?format=rdf).
+
 
 ------
 <a id="location"></a>
