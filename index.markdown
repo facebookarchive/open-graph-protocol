@@ -70,6 +70,7 @@ For example:
 	<html xmlns:og="http://ogp.me/ns#">
 	<head>
 	...
+	[REQUIRED TAGS]
 	<meta property="og:latitude" content="37.416343" />
 	<meta property="og:longitude" content="-122.153013" />
 	<meta property="og:street-address" content="1601 S California Ave" />
@@ -96,6 +97,7 @@ For example:
 	<html xmlns:og="http://ogp.me/ns#">
 	<head>
 	...
+	[REQUIRED TAGS]
 	<meta property="og:email" content="me@example.com" />
 	<meta property="og:phone_number" content="650-123-4567" />
 	<meta property="og:fax_number" content="+1-415-123-4567" />
