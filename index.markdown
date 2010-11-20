@@ -104,6 +104,63 @@ For example:
 	...
 	</head>
 
+------
+<a id="video"></a>
+Attach Video Data
+----
+If you want to attach a video to your Open Graph page you can simply specify a video url:
+
+* `og:video` - e.g., "http://example.com/awesome.flv"
+
+and optionally, you can add additional metadata
+
+* `og:video:height` - e.g. "640"
+* `og:video:width` - e.g. "385"
+* `og:video:type` - e.g. "application/x-shockwave-flash"
+
+If you don't specify a `og:video:type`, parsers will try to infer the type. A sensible default would be to assume "application/x-shockwave-flash" until HTML5 video becomes more prevalent.
+
+For example:
+
+	<html xmlns:og="http://ogp.me/ns#">
+	<head>
+	...
+	[REQUIRED TAGS]
+	<meta property="og:video" content="http://example.com/awesome.flv" />
+	<meta property="og:video:height" content="640" />
+	<meta property="og:video:width" content="385" />
+	<meta property="og:video:type" content="application/x-shockwave-flash" />
+	...
+	</head>
+
+------
+<a id="audio"></a>
+Attach Audio Data
+----
+In a similar fashion to [og:video](#video) you can add an audio file to your markup:
+
+* `og:audio` - e.g., "http://example.com/amazing.mp3"
+
+and optionally
+
+* `og:audio:title` - e.g. "Amazing Soft Rock Ballad"
+* `og:audio:artist` - e.g. "Amazing Band"
+* `og:audio:album` - e.g. "Amazing Album"
+* `og:audio:type` - e.g. "application/mp3"
+
+For example:
+
+	<html xmlns:og="http://ogp.me/ns#">
+	<head>
+	...
+	[REQUIRED TAGS]
+	<meta property="og:audio" content="http://example.com/amazing.mp3" />
+	<meta property="og:audio:title" content="Amazing Song" />
+	<meta property="og:audio:artist" content="Amazing Band" />
+	<meta property="og:audio:album" content="Amazing Album" />
+	<meta property="og:audio:type" content="application/mp3" />
+	...
+	</head>
 
 ------
 <a id="types"></a>
