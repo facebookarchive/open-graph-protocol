@@ -234,7 +234,9 @@ For products which have a UPC code or ISBN number, you can specify them using th
 ------
 Discussion and support
 -----
-You can discuss the Open Graph Protocol on [the developer mailing list](http://groups.google.com/group/open-graph-protocol). It is currently being consumed by Facebook ([see their documentation](http://developers.facebook.com/docs/opengraph)) and is being published by IMDb, Microsoft, NHL, Posterous, Rotten Tomatoes, TIME, Yelp, and others.
+You can discuss the Open Graph Protocol on [the developer mailing list](http://groups.google.com/group/open-graph-protocol).
+It is currently being consumed by Facebook ([see their documentation](http://developers.facebook.com/docs/opengraph)) and [mixi](http://groups.google.com/group/open-graph-protocol/browse_thread/thread/356d722abf70001d/397ec334ca87f122).
+It is being published by IMDb, Microsoft, NHL, Posterous, Rotten Tomatoes, TIME, Yelp, and many many others.
 
 
 <a id='implementations'></a>
@@ -248,10 +250,11 @@ The open source community has developed a number of parsers and publishing tools
 * [OpenGraph for Java](http://github.com/callumj/opengraph-java) - small Java class used to represent the Open Graph protocol
 * [RDF::RDFa::Parser](http://search.cpan.org/~tobyink/RDF-RDFa-Parser/lib/RDF/RDFa/Parser.pm) - Perl RDFa parser which understands the Open Graph protocol
 * [Open Graph Protocol helper for PHP](http://github.com/scottmac/opengraph) - a small library for making accessing of Open Graph Protocol data easier in PHP
-* [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) - PyOpenGraph is a library written in Python for parsing Open Graph protocol information from web sites.
+* [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) - PyOpenGraph is a library written in Python for parsing Open Graph protocol information from web sites
 * [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) - a simple parsers for PHP
 * [OpenGraph Ruby](http://github.com/intridea/opengraph) - Ruby Gem which parses web pages and extracts Open Graph protocol markup
-* [Kestrel Open Graph (kog)](http://johnwyles.com/2010/05/04/kog-a-ruby-implementation-of-the-open-graph-protocol-by-facebook/) - Another Ruby Gem!
+* [Kestrel Open Graph (kog)](http://johnwyles.com/2010/05/04/kog-a-ruby-implementation-of-the-open-graph-protocol-by-facebook/) - Another Ruby Gem
 * [WordPress plugin](http://wordpress.org/extend/plugins/like) - add the Open Graph protocol markup to your WordPress blog
+* [Facebook Linter](http://developers.facebook.com/tools/lint/) - Facebook's official parser and debugger
 
 ------
