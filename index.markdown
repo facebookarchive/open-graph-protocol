@@ -202,6 +202,7 @@ The base schema includes the following types. It's possible that social networks
 * `director`
 * `musician`
 * `politician`
+* `profile`
 * `public_figure`
 
 ### Places
