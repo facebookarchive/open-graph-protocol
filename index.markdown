@@ -106,7 +106,7 @@ For example:
 
 ------
 <a id="video"></a>
-Attach Video Data
+Attaching video data
 ----
 If you want to attach a video to your Open Graph page you can simply specify a video url:
 
@@ -135,7 +135,7 @@ For example:
 
 ------
 <a id="audio"></a>
-Attach Audio Data
+Attaching audio data
 ----
 In a similar fashion to [og:video](#video) you can add an audio file to your markup:
 
