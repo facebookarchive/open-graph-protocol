@@ -1,6 +1,6 @@
 Introduction
 ----
-The [Open Graph protocol](http://www.opengraphprotocol.org/) enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to enable any web page to have the same functionality as a Facebook Page.
+The [Open Graph protocol](http://www.ogp.me/) enables any web page to become a rich object in a social graph. For instance, this is used on Facebook to enable any web page to have the same functionality as a Facebook Page.
 
 While many different technologies and schemas exist and could be combined together, there isn't a single technology which provides enough information to richly represent any web page within the social graph. The Open Graph protocol builds on these existing technologies and gives developers one thing to implement. Developer simplicity is a key goal of the Open Graph protocol which has informed many of [the technical design decisions](http://www.scribd.com/doc/30715288/The-Open-Graph-Protocol-Design-Decisions).
 
@@ -43,7 +43,7 @@ For example (line-break solely for display purposes):
                                              Bond." />
 	<meta property="og:site_name" content="IMDb" />
 
-The RDF schema (which relates the Open Graph Protocol to other schemas) can be found at [http://opengraphprotocol.org/schema](http://opengraphprotocol.org/schema/?format=rdf).
+The RDF schema (which relates the Open Graph Protocol to other schemas) can be found at [http://ogp.me/schema](http://ogp.me/schema/?format=rdf).
 
 
 ------
