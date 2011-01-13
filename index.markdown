@@ -257,5 +257,7 @@ The open source community has developed a number of parsers and publishing tools
 * [Kestrel Open Graph (kog)](http://johnwyles.com/2010/05/04/kog-a-ruby-implementation-of-the-open-graph-protocol-by-facebook/) - Another Ruby Gem
 * [WordPress plugin](http://wordpress.org/extend/plugins/like) - add the Open Graph protocol markup to your WordPress blog
 * [Facebook Linter](http://developers.facebook.com/tools/lint/) - Facebook's official parser and debugger
+* [Open Graph protocol PHP class](https://github.com/niallkennedy/open-graph-protocol-tools) - validate user inputs and generate Open Graph protocol markup
+* [OpenGraphProtocol.us](http://opengraphprotocol.us/) - Generate valid Open Graph Protocol markup using a web form
 
 ------
