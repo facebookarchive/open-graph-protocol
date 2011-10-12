@@ -2,7 +2,7 @@
 
 The [Open Graph protocol](http://www.ogp.me/) enables any web page to become a
 rich object in a social graph. For instance, this is used on Facebook to allow
-any web page to have the same functionality as an object on Facebook.
+any web page to have the same functionality as any other object on Facebook.
 
 While many different technologies and schemas exist and could be combined
 together, there isn't a single technology which provides enough information to
