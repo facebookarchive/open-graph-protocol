@@ -177,8 +177,6 @@ have colons in them.
 
 ### Music
 
-* Collaborators: [Spotify](http://spotify.com/), [Rdio](http://rdio.com/),
-  [MOG](http://mog.com/)
 * Namespace URI: [`http://ogp.me/ns/music#`](http://ogp.me/ns/music)
 
 `og:type` values:
@@ -222,8 +220,6 @@ have colons in them.
 
 ### Video
 
-* Collaborators: [Hulu](http://hulu.com/), [Netflix](http://netflix.com/),
-  [IMDb](http://imdb.com/)
 * Namespace URI: [`http://ogp.me/ns/video#`](http://ogp.me/ns/video)
 
 `og:type` values:
