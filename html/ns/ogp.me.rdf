@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gr="http://purl.org/goodrelations/v1#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:og="http://ogp.me/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	<rdf:Property rdf:about="http://ogp.me/ns#url">
+		<rdfs:label xml:lang="en-US">url</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "http://www.imdb.com/title/tt0117500/".</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://purl.org/dc/elements/1.1/identifier" />
+		<rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/homepage" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#type">
+		<rdfs:label xml:lang="en-US">type</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The type of your object, e.g., "movie".  Depending on the type you specify, other properties may also be required.</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#title">
+		<rdfs:label xml:lang="en-US">title</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The title of the object as it should appear within the graph, e.g.,  "The Rock".</rdfs:comment>
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#locale">
+		<rdfs:label xml:lang="en-US">locale</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A Unix locale in which this markup is rendered.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#image">
+		<rdfs:label xml:lang="en-US">image</rdfs:label>
+		<rdfs:comment xml:lang="en-US">An image URL which should represent your object within the graph.</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/depiction" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#image:secure_url">
+		<rdfs:label xml:lang="en-US">image secure url</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A secure image URL which should represent your object within the graph.</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/depiction" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#image:type">
+		<rdfs:label xml:lang="en-US">image type</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The mime type of an image.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#image:width">
+		<rdfs:label xml:lang="en-US">image width</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The width of an image.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#image:height">
+		<rdfs:label xml:lang="en-US">image height</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The height of an image.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#video">
+		<rdfs:label xml:lang="en-US">video</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A relevant video URL for your object.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#video:secure_url">
+		<rdfs:label xml:lang="en-US">video secure URL</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A relevant, secure video URL for your object.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#video:type">
+		<rdfs:label xml:lang="en-US">video type</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The mime type of a video e.g., "application/x-shockwave-flash"</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#video:width">
+		<rdfs:label xml:lang="en-US">video width</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The width of a video.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#video:height">
+		<rdfs:label xml:lang="en-US">video height</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The height of a video.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#audio">
+		<rdfs:label xml:lang="en-US">audio</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A relevant audio URL for your object.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#audio:secure_url">
+		<rdfs:label xml:lang="en-US">audio secure URL</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A relevant, secure audio URL for your object.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#audio:type">
+		<rdfs:label xml:lang="en-US">audio type</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The mime type of an audio file e.g., "application/mp3"</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#description">
+		<rdfs:label xml:lang="en-US">description</rdfs:label>
+		<rdfs:comment xml:lang="en-US">A one to two sentence description of your object.</rdfs:comment>
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#site_name">
+		<rdfs:label xml:lang="en-US">site name</rdfs:label>
+		<rdfs:comment xml:lang="en-US">If your object is part of a larger web site, the name which should be displayed for the overall site. e.g., "IMDb".</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#determiner">
+		<rdfs:label xml:lang="en-US">determiner</rdfs:label>
+		<rdfs:comment xml:lang="en-US">The word to precede the object's title in a sentence (e.g., "the" in "the statue of liberty").  Valid values are "a", "an", "the", "", and "auto".</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+
+	<!-- DEPRECATED PROPERTIES!  DO NOT READ ON UNLESS YOU MUST! -->
+
+	<rdf:Property rdf:about="http://ogp.me/ns#audio:title">
+		<rdfs:label xml:lang="en-US">audio title</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] A title for some audio.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#audio:artist">
+		<rdfs:label xml:lang="en-US">audio artist</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] An artist of some audio.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#audio:album">
+		<rdfs:label xml:lang="en-US">audio album</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] An album to which some audio belongs.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#latitude">
+		<rdfs:label xml:lang="en-US">latitude</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] The latitude of the resource e.g., the latitude of a company.</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#longitude">
+		<rdfs:label xml:lang="en-US">longitude</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] The longitude of the resource e.g., the longitude of a company.</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#street-address">
+		<rdfs:label xml:lang="en-US">street address</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] The street address of the resource e.g., "1601 S California Ave".</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://www.w3.org/2006/vcard/ns#street-address" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#locality">
+		<rdfs:label xml:lang="en-US">locality</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] The locality of the resource e.g, "Palo Alto"</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://www.w3.org/2006/vcard/ns#locality" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#region">
+		<rdfs:label xml:lang="en-US">region</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] The region of the resource e.g., "CA"</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://www.w3.org/2006/vcard/ns#region" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#postal-code">
+		<rdfs:label xml:lang="en-US">postal code</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] The postal code of the resource e.g., "94304"</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://www.w3.org/2006/vcard/ns#postal-code" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#country-name">
+		<rdfs:label xml:lang="en-US">country name</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] The country name of the resource e.g., "USA"</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://www.w3.org/2006/vcard/ns#country-name" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#email">
+		<rdfs:label xml:lang="en-US">email</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] Email of the contact for your object.</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/mbox" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#phone_number">
+		<rdfs:label xml:lang="en-US">phone number</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] Phone number of the contact for your object.</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/phone" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#fax_number">
+		<rdfs:label xml:lang="en-US">fax number</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] Fax number of the contact for your object.</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/phone" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#isbn">
+		<rdfs:label xml:lang="en-US">isbn</rdfs:label>
+		<rdfs:label xml:lang="en-US">International Standard Book Number</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] International Standard Book Number for you object.</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://purl.org/ontology/bibo/isbn" />
+		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+	</rdf:Property>
+	<rdf:Property rdf:about="http://ogp.me/ns#upc">
+		<rdfs:label xml:lang="en-US">upc</rdfs:label>
+		<rdfs:label xml:lang="en-US">universal product code</rdfs:label>
+		<rdfs:comment xml:lang="en-US">[DEPRECATED] Universal Product Code for your object.</rdfs:comment>
+		<rdfs:seeAlso rdf:resource="http://purl.org/goodrelations/v1#hasEAN_UCC-13" />
+	</rdf:Property>
+</rdf:RDF>

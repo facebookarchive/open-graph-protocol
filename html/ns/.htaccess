@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule fb/(.+) http://graph.facebook.com/schema/og/fb/$1 [L]
+RewriteRule fb/? http://graph.facebook.com/schema/og/ [L]
+RewriteRule / ns/ [L]
+RewriteRule (ogp.me..*) $1 [L]
+RewriteRule ([^/]+) http://graph.facebook.com/schema/og/$1 [L]
