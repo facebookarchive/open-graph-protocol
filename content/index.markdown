@@ -398,7 +398,7 @@ TIME, Yelp, and many many others.
 <a id='implementations'></a>
 ## Implementations
 The open source community has developed a number of parsers and publishing
-tools. Let the mailing list know if you've built something awesome too!
+tools. Let the Facebook group know if you've built something awesome too!
 
 * [Facebook Object Debugger](http://developers.facebook.com/tools/debug/) -
   Facebook's official parser and debugger
