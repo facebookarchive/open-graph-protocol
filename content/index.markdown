@@ -382,7 +382,9 @@ The following types are used when defining attributes in the Open Graph.
 
 You can discuss the Open Graph Protocol in
 [the Facebook group](
-https://www.facebook.com/groups/opengraph/).
+https://www.facebook.com/groups/opengraph/) or on 
+[the developer mailing list](
+http://groups.google.com/group/open-graph-protocol).
 It is currently being consumed by Facebook
 ([see their documentation](
 http://developers.facebook.com/docs/opengraph)) and
