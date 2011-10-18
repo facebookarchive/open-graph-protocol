@@ -269,41 +269,39 @@ The metadata is identical to [video.movie](#type_video.movie).
 These are globally defined objects that just don't fit into a vertical but
 yet are broadly used and agreed upon.
 
-* Namespace URI: [`http://ogp.me/ns#`](http://ogp.me/ns)
-
 `og:type` values:
 
-<a name="type_article">`article`</a>
+<a name="type_article">`article`</a> - Namespace URI: [`http://ogp.me/ns/article#`](http://ogp.me/ns/article)
 
-* `og:published_time` - [datetime](#datetime) - 
+* `article:published_time` - [datetime](#datetime) - 
   When the article was first published.
-* `og:modified_time` - [datetime](#datetime) - 
+* `article:modified_time` - [datetime](#datetime) - 
   When the article was last changed.
-* `og:expiration_time` - [datetime](#datetime) - 
+* `article:expiration_time` - [datetime](#datetime) - 
   When the article is out of date after.
-* `og:author` - [profile](#type_profile) [array](#array) -
+* `article:author` - [profile](#type_profile) [array](#array) -
   Writers of the article.
-* `og:section` - [string](#string) - A high-level section name. E.g. Technology
-* `og:tag` - [string](#string) [array](#array) -
+* `article:section` - [string](#string) - A high-level section name. E.g. Technology
+* `article:tag` - [string](#string) [array](#array) -
   Tag words associated with this article.
 
-<a name="type_book">`book`</a>
+<a name="type_book">`book`</a> - Namespace URI: [`http://ogp.me/ns/book#`](http://ogp.me/ns/book)
 
-* `og:author` - [profile](#type_profile) [array](#array) - Who wrote this book.
-* `og:isbn` - [string](#string) -
+* `book:author` - [profile](#type_profile) [array](#array) - Who wrote this book.
+* `book:isbn` - [string](#string) -
   The [ISBN](http://en.wikipedia.org/wiki/International_Standard_Book_Number)
-* `og:release_date` - [datetime](#datetime) - The date the book was released.
-* `og:tag` - [string](#string) [array](#array) -
+* `book:release_date` - [datetime](#datetime) - The date the book was released.
+* `book:tag` - [string](#string) [array](#array) -
   Tag words associated with this book.
 
-<a name="type_profile">`profile`</a>
+<a name="type_profile">`profile`</a> - Namespace URI: [`http://ogp.me/ns/profile#`](http://ogp.me/ns/profile)
 
-* `og:first_name` - [string](#string) - Their given name.
-* `og:last_name` - [string](#string) - Their family name.
-* `og:username` - [string](#string) - A short unique string to identify them.
-* `og:gender` - [enum](#enum)(male, female) - Their gender.
+* `profile:first_name` - [string](#string) - Their given name.
+* `profile:last_name` - [string](#string) - Their family name.
+* `profile:username` - [string](#string) - A short unique string to identify them.
+* `profile:gender` - [enum](#enum)(male, female) - Their gender.
 
-<a name="type_website">`website`</a>
+<a name="type_website">`website`</a> - Namespace URI: [`http://ogp.me/ns/website#`](http://ogp.me/ns/website)
 
 No additional propertiers other than the basic ones.
 Any non-marked up webpage should be treated as `og:type` website.
