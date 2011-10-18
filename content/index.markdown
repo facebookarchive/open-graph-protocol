@@ -105,7 +105,7 @@ A full image example:
 
     <meta property="og:image" content="http://example.com/ogp.jpg" />
     <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
-    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
 
