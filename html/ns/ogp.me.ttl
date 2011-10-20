@@ -7,6 +7,10 @@
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix gr: <http://purl.org/goodrelations/v1#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+
+##### PROPERTIES #####
+
 og:url a rdf:Property ;
 	rdfs:label "url"@en-US ;
 	rdfs:comment "The canonical URL of your object that will be used as its permanent ID in the graph, e.g., \"http://www.imdb.com/title/tt0117500/\"."@en-US ;
@@ -40,7 +44,8 @@ og:image a rdf:Property ;
 <http://ogp.me/ns#image:type> a rdf:Property ;
 	rdfs:label "image type"@en-US ;
 	rdfs:comment "The mime type of an image."@en-US ;
-	rdfs:isDefinedBy og: .
+	rdfs:isDefinedBy og: ;
+	rdfs:range og:mime_type_str .
 <http://ogp.me/ns#image:width> a rdf:Property ;
 	rdfs:label "image width"@en-US ;
 	rdfs:comment "The width of an image."@en-US ;
@@ -60,7 +65,8 @@ og:video a rdf:Property ;
 <http://ogp.me/ns#video:type> a rdf:Property ;
 	rdfs:label "video type"@en-US ;
 	rdfs:comment "The mime type of a video e.g., \"application/x-shockwave-flash\""@en-US ;
-	rdfs:isDefinedBy og: .
+	rdfs:isDefinedBy og: ;
+	rdfs:range og:mime_type_str .
 <http://ogp.me/ns#video:width> a rdf:Property ;
 	rdfs:label "video width"@en-US ;
 	rdfs:comment "The width of a video."@en-US ;
@@ -80,7 +86,8 @@ og:audio a rdf:Property ;
 <http://ogp.me/ns#audio:type> a rdf:Property ;
 	rdfs:label "audio type"@en-US ;
 	rdfs:comment "The mime type of an audio file e.g., \"application/mp3\""@en-US ;
-	rdfs:isDefinedBy og: .
+	rdfs:isDefinedBy og: ;
+	rdfs:range og:mime_type_str .
 og:description a rdf:Property ;
 	rdfs:label "description"@en-US ;
 	rdfs:comment "A one to two sentence description of your object."@en-US ;
@@ -93,6 +100,14 @@ og:site_name a rdf:Property ;
 og:determiner a rdf:Property ;
 	rdfs:label "determiner"@en-US ;
 	rdfs:comment "The word to precede the object's title in a sentence (e.g., \"the\" in \"the statue of liberty\").  Valid values are \"a\", \"an\", \"the\", \"\", and \"auto\"."@en-US ;
+	rdfs:isDefinedBy og: .
+
+
+##### DATATYPES #####
+
+og:mime_type_str a rdfs:Datatype ;
+	rdfs:label "mime type string"@en-US ;
+	rdfs:comment "Valid mime type strings (e.g., \"application/mp3\")."@en-US ;
 	rdfs:isDefinedBy og: .
 
 
