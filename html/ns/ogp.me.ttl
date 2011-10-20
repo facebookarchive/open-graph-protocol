@@ -110,7 +110,7 @@ og:mime_type_str a rdfs:Datatype ;
 	rdfs:label "mime type string"@en-US ;
 	rdfs:comment "Valid mime type strings (e.g., \"application/mp3\")."@en-US ;
 	rdfs:isDefinedBy og: ;
-	rdfs:subPropertyOf xsd:string .
+	rdfs:subClassOf xsd:string .
 
 
 
