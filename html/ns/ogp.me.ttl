@@ -8,92 +8,92 @@
 @prefix gr: <http://purl.org/goodrelations/v1#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 og:url a rdf:Property ;
-	rdfs:label "url"@en-US ;
-	rdfs:comment "The canonical URL of your object that will be used as its permanent ID in the graph, e.g., \"http://www.imdb.com/title/tt0117500/\"."@en-US ;
-	rdfs:seeAlso dc:identifier,
-		foaf:homepage ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "url"@en-US ;
+  rdfs:comment "The canonical URL of your object that will be used as its permanent ID in the graph, e.g., \"http://www.imdb.com/title/tt0117500/\"."@en-US ;
+  rdfs:seeAlso dc:identifier,
+    foaf:homepage ;
+  rdfs:isDefinedBy og: .
 og:type a rdf:Property ;
-	rdfs:label "type"@en-US ;
-	rdfs:comment "The type of your object, e.g., \"movie\".  Depending on the type you specify, other properties may also be required."@en-US ;
-	rdfs:seeAlso rdf:type ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "type"@en-US ;
+  rdfs:comment "The type of your object, e.g., \"movie\".  Depending on the type you specify, other properties may also be required."@en-US ;
+  rdfs:seeAlso rdf:type ;
+  rdfs:isDefinedBy og: .
 og:title a rdf:Property ;
-	rdfs:label "title"@en-US ;
-	rdfs:comment "The title of the object as it should appear within the graph, e.g.,  \"The Rock\"."@en-US ;
-	rdfs:subPropertyOf rdfs:label ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "title"@en-US ;
+  rdfs:comment "The title of the object as it should appear within the graph, e.g.,  \"The Rock\"."@en-US ;
+  rdfs:subPropertyOf rdfs:label ;
+  rdfs:isDefinedBy og: .
 og:locale a rdf:Property ;
-	rdfs:label "locale"@en-US ;
-	rdfs:comment "A Unix locale in which this markup is rendered."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "locale"@en-US ;
+  rdfs:comment "A Unix locale in which this markup is rendered."@en-US ;
+  rdfs:isDefinedBy og: .
 og:image a rdf:Property ;
-	rdfs:label "image"@en-US ;
-	rdfs:comment "An image URL which should represent your object within the graph."@en-US ;
-	rdfs:seeAlso foaf:depiction ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "image"@en-US ;
+  rdfs:comment "An image URL which should represent your object within the graph."@en-US ;
+  rdfs:seeAlso foaf:depiction ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#image:secure_url> a rdf:Property ;
-	rdfs:label "image secure url"@en-US ;
-	rdfs:comment "A secure image URL which should represent your object within the graph."@en-US ;
-	rdfs:seeAlso foaf:depiction ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "image secure url"@en-US ;
+  rdfs:comment "A secure image URL which should represent your object within the graph."@en-US ;
+  rdfs:seeAlso foaf:depiction ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#image:type> a rdf:Property ;
-	rdfs:label "image type"@en-US ;
-	rdfs:comment "The mime type of an image."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "image type"@en-US ;
+  rdfs:comment "The mime type of an image."@en-US ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#image:width> a rdf:Property ;
-	rdfs:label "image width"@en-US ;
-	rdfs:comment "The width of an image."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "image width"@en-US ;
+  rdfs:comment "The width of an image."@en-US ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#image:height> a rdf:Property ;
-	rdfs:label "image height"@en-US ;
-	rdfs:comment "The height of an image."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "image height"@en-US ;
+  rdfs:comment "The height of an image."@en-US ;
+  rdfs:isDefinedBy og: .
 og:video a rdf:Property ;
-	rdfs:label "video"@en-US ;
-	rdfs:comment "A relevant video URL for your object."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "video"@en-US ;
+  rdfs:comment "A relevant video URL for your object."@en-US ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#video:secure_url> a rdf:Property ;
-	rdfs:label "video secure URL"@en-US ;
-	rdfs:comment "A relevant, secure video URL for your object."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "video secure URL"@en-US ;
+  rdfs:comment "A relevant, secure video URL for your object."@en-US ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#video:type> a rdf:Property ;
-	rdfs:label "video type"@en-US ;
-	rdfs:comment "The mime type of a video e.g., \"application/x-shockwave-flash\""@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "video type"@en-US ;
+  rdfs:comment "The mime type of a video e.g., \"application/x-shockwave-flash\""@en-US ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#video:width> a rdf:Property ;
-	rdfs:label "video width"@en-US ;
-	rdfs:comment "The width of a video."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "video width"@en-US ;
+  rdfs:comment "The width of a video."@en-US ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#video:height> a rdf:Property ;
-	rdfs:label "video height"@en-US ;
-	rdfs:comment "The height of a video."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "video height"@en-US ;
+  rdfs:comment "The height of a video."@en-US ;
+  rdfs:isDefinedBy og: .
 og:audio a rdf:Property ;
-	rdfs:label "audio"@en-US ;
-	rdfs:comment "A relevant audio URL for your object."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "audio"@en-US ;
+  rdfs:comment "A relevant audio URL for your object."@en-US ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#audio:secure_url> a rdf:Property ;
-	rdfs:label "audio secure URL"@en-US ;
-	rdfs:comment "A relevant, secure audio URL for your object."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "audio secure URL"@en-US ;
+  rdfs:comment "A relevant, secure audio URL for your object."@en-US ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#audio:type> a rdf:Property ;
-	rdfs:label "audio type"@en-US ;
-	rdfs:comment "The mime type of an audio file e.g., \"application/mp3\""@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "audio type"@en-US ;
+  rdfs:comment "The mime type of an audio file e.g., \"application/mp3\""@en-US ;
+  rdfs:isDefinedBy og: .
 og:description a rdf:Property ;
-	rdfs:label "description"@en-US ;
-	rdfs:comment "A one to two sentence description of your object."@en-US ;
-	rdfs:subPropertyOf rdfs:comment ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "description"@en-US ;
+  rdfs:comment "A one to two sentence description of your object."@en-US ;
+  rdfs:subPropertyOf rdfs:comment ;
+  rdfs:isDefinedBy og: .
 og:site_name a rdf:Property ;
-	rdfs:label "site name"@en-US ;
-	rdfs:comment "If your object is part of a larger web site, the name which should be displayed for the overall site. e.g., \"IMDb\"."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "site name"@en-US ;
+  rdfs:comment "If your object is part of a larger web site, the name which should be displayed for the overall site. e.g., \"IMDb\"."@en-US ;
+  rdfs:isDefinedBy og: .
 og:determiner a rdf:Property ;
-	rdfs:label "determiner"@en-US ;
-	rdfs:comment "The word to precede the object's title in a sentence (e.g., \"the\" in \"the statue of liberty\").  Valid values are \"a\", \"an\", \"the\", \"\", and \"auto\"."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "determiner"@en-US ;
+  rdfs:comment "The word to precede the object's title in a sentence (e.g., \"the\" in \"the statue of liberty\").  Valid values are \"a\", \"an\", \"the\", \"\", and \"auto\"."@en-US ;
+  rdfs:isDefinedBy og: .
 
 
 
@@ -106,75 +106,75 @@ og:determiner a rdf:Property ;
 
 
 <http://ogp.me/ns#audio:title> a rdf:Property ;
-	rdfs:label "audio title"@en-US ;
-	rdfs:comment "[DEPRECATED] A title for some audio."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "audio title"@en-US ;
+  rdfs:comment "[DEPRECATED] A title for some audio."@en-US ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#audio:artist> a rdf:Property ;
-	rdfs:label "audio artist"@en-US ;
-	rdfs:comment "[DEPRECATED] An artist of some audio."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "audio artist"@en-US ;
+  rdfs:comment "[DEPRECATED] An artist of some audio."@en-US ;
+  rdfs:isDefinedBy og: .
 <http://ogp.me/ns#audio:album> a rdf:Property ;
-	rdfs:label "audio album"@en-US ;
-	rdfs:comment "[DEPRECATED] An album to which some audio belongs."@en-US ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "audio album"@en-US ;
+  rdfs:comment "[DEPRECATED] An album to which some audio belongs."@en-US ;
+  rdfs:isDefinedBy og: .
 og:latitude a rdf:Property ;
-	rdfs:label "latitude"@en-US ;
-	rdfs:comment "[DEPRECATED] The latitude of the resource e.g., the latitude of a company."@en-US ;
-	rdfs:seeAlso geo:lat ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "latitude"@en-US ;
+  rdfs:comment "[DEPRECATED] The latitude of the resource e.g., the latitude of a company."@en-US ;
+  rdfs:seeAlso geo:lat ;
+  rdfs:isDefinedBy og: .
 og:longitude a rdf:Property ;
-	rdfs:label "longitude"@en-US ;
-	rdfs:comment "[DEPRECATED] The longitude of the resource e.g., the longitude of a company."@en-US ;
-	rdfs:seeAlso geo:long ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "longitude"@en-US ;
+  rdfs:comment "[DEPRECATED] The longitude of the resource e.g., the longitude of a company."@en-US ;
+  rdfs:seeAlso geo:long ;
+  rdfs:isDefinedBy og: .
 og:street-address a rdf:Property ;
-	rdfs:label "street address"@en-US ;
-	rdfs:comment "[DEPRECATED] The street address of the resource e.g., \"1601 S California Ave\"."@en-US ;
-	rdfs:seeAlso vcard:street-address ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "street address"@en-US ;
+  rdfs:comment "[DEPRECATED] The street address of the resource e.g., \"1601 S California Ave\"."@en-US ;
+  rdfs:seeAlso vcard:street-address ;
+  rdfs:isDefinedBy og: .
 og:locality a rdf:Property ;
-	rdfs:label "locality"@en-US ;
-	rdfs:comment "[DEPRECATED] The locality of the resource e.g, \"Palo Alto\""@en-US ;
-	rdfs:seeAlso vcard:locality ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "locality"@en-US ;
+  rdfs:comment "[DEPRECATED] The locality of the resource e.g, \"Palo Alto\""@en-US ;
+  rdfs:seeAlso vcard:locality ;
+  rdfs:isDefinedBy og: .
 og:region a rdf:Property ;
-	rdfs:label "region"@en-US ;
-	rdfs:comment "[DEPRECATED] The region of the resource e.g., \"CA\""@en-US ;
-	rdfs:seeAlso vcard:region ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "region"@en-US ;
+  rdfs:comment "[DEPRECATED] The region of the resource e.g., \"CA\""@en-US ;
+  rdfs:seeAlso vcard:region ;
+  rdfs:isDefinedBy og: .
 og:postal-code a rdf:Property ;
-	rdfs:label "postal code"@en-US ;
-	rdfs:comment "[DEPRECATED] The postal code of the resource e.g., \"94304\""@en-US ;
-	rdfs:seeAlso vcard:postal-code ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "postal code"@en-US ;
+  rdfs:comment "[DEPRECATED] The postal code of the resource e.g., \"94304\""@en-US ;
+  rdfs:seeAlso vcard:postal-code ;
+  rdfs:isDefinedBy og: .
 og:country-name a rdf:Property ;
-	rdfs:label "country name"@en-US ;
-	rdfs:comment "[DEPRECATED] The country name of the resource e.g., \"USA\""@en-US ;
-	rdfs:seeAlso vcard:country-name ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "country name"@en-US ;
+  rdfs:comment "[DEPRECATED] The country name of the resource e.g., \"USA\""@en-US ;
+  rdfs:seeAlso vcard:country-name ;
+  rdfs:isDefinedBy og: .
 og:email a rdf:Property ;
-	rdfs:label "email"@en-US ;
-	rdfs:comment "[DEPRECATED] Email of the contact for your object."@en-US ;
-	rdfs:seeAlso foaf:mbox ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "email"@en-US ;
+  rdfs:comment "[DEPRECATED] Email of the contact for your object."@en-US ;
+  rdfs:seeAlso foaf:mbox ;
+  rdfs:isDefinedBy og: .
 og:phone_number a rdf:Property ;
-	rdfs:label "phone number"@en-US ;
-	rdfs:comment "[DEPRECATED] Phone number of the contact for your object."@en-US ;
-	rdfs:seeAlso foaf:phone ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "phone number"@en-US ;
+  rdfs:comment "[DEPRECATED] Phone number of the contact for your object."@en-US ;
+  rdfs:seeAlso foaf:phone ;
+  rdfs:isDefinedBy og: .
 og:fax_number a rdf:Property ;
-	rdfs:label "fax number"@en-US ;
-	rdfs:comment "[DEPRECATED] Fax number of the contact for your object."@en-US ;
-	rdfs:seeAlso foaf:phone ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "fax number"@en-US ;
+  rdfs:comment "[DEPRECATED] Fax number of the contact for your object."@en-US ;
+  rdfs:seeAlso foaf:phone ;
+  rdfs:isDefinedBy og: .
 og:isbn a rdf:Property ;
-	rdfs:label "isbn"@en-US ;
-	rdfs:label "International Standard Book Number"@en-US ;
-	rdfs:comment "[DEPRECATED] International Standard Book Number for you object."@en-US ;
-	rdfs:seeAlso bibo:isbn ;
-	rdfs:isDefinedBy og: .
+  rdfs:label "isbn"@en-US ;
+  rdfs:label "International Standard Book Number"@en-US ;
+  rdfs:comment "[DEPRECATED] International Standard Book Number for you object."@en-US ;
+  rdfs:seeAlso bibo:isbn ;
+  rdfs:isDefinedBy og: .
 og:upc a rdf:Property ;
-	rdfs:label "upc"@en-US ;
-	rdfs:label "universal product code"@en-US ;
-	rdfs:comment "[DEPRECATED] Universal Product Code for your object."@en-US ;
-	rdfs:seeAlso gr:hasEAN_UCC-13 .
+  rdfs:label "upc"@en-US ;
+  rdfs:label "universal product code"@en-US ;
+  rdfs:comment "[DEPRECATED] Universal Product Code for your object."@en-US ;
+  rdfs:seeAlso gr:hasEAN_UCC-13 .
