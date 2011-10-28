@@ -1,4 +1,4 @@
-## Introduction
+## <a id="intro" href="#intro">Introduction</a>
 
 The [Open Graph protocol](http://www.ogp.me/) enables any web page to become a
 rich object in a social graph. For instance, this is used on Facebook to allow
@@ -15,8 +15,7 @@ http://www.scribd.com/doc/30715288/The-Open-Graph-Protocol-Design-Decisions).
 
 
 ---
-<a id="metadata"></a>
-## Basic metadata
+## <a id="metadata" href="#metadata">Basic Metadata</a>
 
 To turn your web pages into graph objects, you need to add basic metadata to
 your page. We've based the initial version of the protocol on
@@ -49,7 +48,7 @@ IMDB](http://www.imdb.com/title/tt0117500):
     </html>
 
 
-### Optional Metadata
+### <a id="optional" href="#optional">Optional Metadata</a>
 
 The following properties are optional for any object and are generally
 recommended:
@@ -84,8 +83,7 @@ The RDF schema (in [Turtle](http://en.wikipedia.org/wiki/Turtle_(syntax)))
 can be found at [ogp.me/ns](http://ogp.me/ns/ogp.me.ttl).
 
 ---
-<a id="structured"></a>
-## Structured Properties
+## <a id="structured" href="#structured">Structured Properties</a>
 
 Some properties can have extra metadata attached to them.
 These are specified in the same way as other metadata with `property` and
@@ -125,8 +123,7 @@ The `og:audio` tag only has the first 3 properties available
     <meta property="og:audio:type" content="audio/mpeg" />
 
 ---
-<a id="array"></a>
-## Arrays
+## <a id="array" href="#arrays">Arrays</a>
 
 If a tag can have multiple values, just put multiple versions of the same
 `<meta>` tag on your page. The first tag (from top to bottom) is given
@@ -152,8 +149,7 @@ means there are 3 images on this page, the first image is `300x300`, the middle
 one has unspecified dimensions, and the last one is `1000`px tall.
 
 ---
-<a id="types"></a>
-## Object Types
+## <a id="types" href="#types">Object Types</a>
 
 In order for your object to be represented within the graph, you need to
 specify its type. This is done using the `og:type` property:
@@ -175,13 +171,13 @@ have colons in them.
 
 
 
-### Music
+### <a id="type_music" href="#type_music">Music</a>
 
 * Namespace URI: [`http://ogp.me/ns/music#`](http://ogp.me/ns/music)
 
 `og:type` values:
 
-<a name="type_music.song">`music.song`</a>
+<a name="type_music.song" href="#type_music.song">`music.song`</a>
 
 * `music:duration` - [integer](#integer) &gt;=1 - The song's length in seconds.
 * `music:album` - [music.album](#type_music.album) [array](#array) -
@@ -193,7 +189,7 @@ have colons in them.
 * `music:musician` - [profile](#type_profile) [array](#array) -
   The musician that made this song.
 
-<a name="type_music.album">`music.album`</a>
+<a name="type_music.album" href="#type_music.album">`music.album`</a>
 
 * `music:song` - [music.song](#type_music.song) - The song on this album.
 * `music:song:disc` - [integer](#integer) &gt;=1 -
@@ -205,26 +201,26 @@ have colons in them.
 * `music:release_date` - [datetime](#datetime) - 
   The date the album was released.
 
-<a name="type_music.playlist">`music.playlist`</a>
+<a name="type_music.playlist" href="#type_music.playlist">`music.playlist`</a>
 
 * `music:song` - Identical to the ones on [music.album](#type_music.album)
 * `music:song:disc`
 * `music:song:track`
 * `music:creator` - [profile](#type_profile) - The creator of this playlist.
 
-<a name="type_music.radio_station">`music.radio_station`</a>
+<a name="type_music.radio_station" href="#type_music.radio_station">`music.radio_station`</a>
 
 * `music:creator` - [profile](#type_profile) - The creator of this station.
 
 
 
-### Video
+### <a id="type_video" href="#type_video">Video</a>
 
 * Namespace URI: [`http://ogp.me/ns/video#`](http://ogp.me/ns/video)
 
 `og:type` values:
 
-<a name="type_video.movie">`video.movie`</a>
+<a name="type_video.movie" href="#type_video.movie">`video.movie`</a>
 
 * `video:actor` - [profile](#type_profile) [array](#array) -
   Actors in the movie.
@@ -240,7 +236,7 @@ have colons in them.
 * `video:tag` - [string](#string) [array](#array) -
   Tag words associated with this movie.
 
-<a name="type_video.episode">`video.episode`</a>
+<a name="type_video.episode" href="#type_video.episode">`video.episode`</a>
 
 * `video:actor` - Identical to [video.movie](#type_video.movie)
 * `video:actor:role`
@@ -252,26 +248,26 @@ have colons in them.
 * `video:series` - [video.tv_show](#type_video.tv_show) -
   Which series this episode belongs to.
 
-<a name="type_video.tv_show">`video.tv_show`</a>
+<a name="type_video.tv_show" href="#type_video.tv_show">`video.tv_show`</a>
 
 A multi-episode TV show.
 The metadata is identical to [video.movie](#type_video.movie).
 
-<a name="type_video.other">`video.other`</a>
+<a name="type_video.other" href="#type_video.other">`video.other`</a>
 
 A video that doesn't belong in any other category.
 The metadata is identical to [video.movie](#type_video.movie).
 
 
 
-### No Vertical
+### <a id="no_vertical" href="#no_vertical">No Vertical</a>
 
 These are globally defined objects that just don't fit into a vertical but
 yet are broadly used and agreed upon.
 
 `og:type` values:
 
-<a name="type_article">`article`</a> - Namespace URI: [`http://ogp.me/ns/article#`](http://ogp.me/ns/article)
+<a name="type_article" href="#type_article">`article`</a> - Namespace URI: [`http://ogp.me/ns/article#`](http://ogp.me/ns/article)
 
 * `article:published_time` - [datetime](#datetime) - 
   When the article was first published.
@@ -285,7 +281,7 @@ yet are broadly used and agreed upon.
 * `article:tag` - [string](#string) [array](#array) -
   Tag words associated with this article.
 
-<a name="type_book">`book`</a> - Namespace URI: [`http://ogp.me/ns/book#`](http://ogp.me/ns/book)
+<a name="type_book" href="#type_book">`book`</a> - Namespace URI: [`http://ogp.me/ns/book#`](http://ogp.me/ns/book)
 
 * `book:author` - [profile](#type_profile) [array](#array) - Who wrote this book.
 * `book:isbn` - [string](#string) -
@@ -294,21 +290,21 @@ yet are broadly used and agreed upon.
 * `book:tag` - [string](#string) [array](#array) -
   Tag words associated with this book.
 
-<a name="type_profile">`profile`</a> - Namespace URI: [`http://ogp.me/ns/profile#`](http://ogp.me/ns/profile)
+<a name="type_profile" href="#type_profile">`profile`</a> - Namespace URI: [`http://ogp.me/ns/profile#`](http://ogp.me/ns/profile)
 
 * `profile:first_name` - [string](#string) - Their given name.
 * `profile:last_name` - [string](#string) - Their family name.
 * `profile:username` - [string](#string) - A short unique string to identify them.
 * `profile:gender` - [enum](#enum)(male, female) - Their gender.
 
-<a name="type_website">`website`</a> - Namespace URI: [`http://ogp.me/ns/website#`](http://ogp.me/ns/website)
+<a name="type_website" href="#type_website">`website`</a> - Namespace URI: [`http://ogp.me/ns/website#`](http://ogp.me/ns/website)
 
 No additional propertiers other than the basic ones.
 Any non-marked up webpage should be treated as `og:type` website.
 
 
 ---
-## Types
+## <a id="data_types" href="#data_types">Types</a>
 
 The following types are used when defining attributes in the Open Graph.
 
@@ -321,27 +317,27 @@ The following types are used when defining attributes in the Open Graph.
 </tr>
 
 <tr>
-  <td><a name="bool">Boolean</td>
+  <td><a name="bool" href="#bool">Boolean</td>
   <td>A Boolean represents a true or false value</td>
   <td>true, false, 1, 0</td>
 </tr>
 
 <tr>
-  <td><a name="datetime">DateTime</td>
+  <td><a name="datetime" href="#datetime">DateTime</td>
   <td>A DateTime represents a temporal value composed of a date
     (year, month, day) and an optional time component (hours, minutes)</td>
   <td><a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a></td>
 </tr>
 
 <tr>
-  <td><a name="enum">Enum</td>
+  <td><a name="enum" href="#enum">Enum</td>
   <td>A type consisting of bounded set of constant string values 
   (enumeration members).
   <td>A string value that is a member of the enumeration</td>
 </tr>
 
 <tr>
-  <td><a name="float">Float</td>
+  <td><a name="float" href="#float">Float</td>
   <td>A 64-bit signed floating point number</td>
   <td>All literals that conform to the following formats:<br><br>
 1.234<br>
@@ -353,7 +349,7 @@ The following types are used when defining attributes in the Open Graph.
 </tr>
 
 <tr>
-  <td><a name="integer">Integer</td>
+  <td><a name="integer" href="#integer">Integer</td>
   <td>A 32-bit signed integer. In many languages integers over 32-bits become 
     floats, so we limit the Open Grpah for easy multi-language use.</td>
   <td>All literals that conform to the following formats:<br><br>
@@ -363,13 +359,13 @@ The following types are used when defining attributes in the Open Graph.
 </tr>
 
 <tr>
-  <td><a name="string">String</td>
+  <td><a name="string" href="#string">String</td>
   <td>A sequence of UTF-8 characters</td>
   <td>All literals composed of UTF-8 characters with no escape characters</td>
 </tr>
 
 <tr>
-  <td><a name="url">URL</td>
+  <td><a name="url" href="#url">URL</td>
   <td>A sequence of UTF-8 characters that identify a Internet resource.
   <td>All valid URLs that utilize the http:// or https:// protocols</td>
 </tr>
@@ -377,8 +373,7 @@ The following types are used when defining attributes in the Open Graph.
 </table>
 
 ---
-<a id='discuss'></a>
-## Discussion and support
+## <a id='discuss' href="#discuss">Discussion and support</a>
 
 You can discuss the Open Graph Protocol in
 [the Facebook group](
@@ -395,8 +390,7 @@ TIME, Yelp, and many many others.
 
 
 ---
-<a id='implementations'></a>
-## Implementations
+## <a id='implementations' href="#implementations">Implementations</a>
 The open source community has developed a number of parsers and publishing
 tools. Let the Facebook group know if you've built something awesome too!
 

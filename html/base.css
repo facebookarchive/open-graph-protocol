@@ -26,6 +26,19 @@ a code {
   color: #060;
 }
 
+h2 a,
+h3 a {
+  color : #666;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 a {
   color: #3b5998;
 }
