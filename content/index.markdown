@@ -124,7 +124,7 @@ The `og:audio` tag only has the first 3 properties available
     <meta property="og:audio:type" content="audio/mpeg" />
 
 ---
-## <a id="array" href="#arrays">Arrays</a>
+## <a id="array" href="#array">Arrays</a>
 
 If a tag can have multiple values, just put multiple versions of the same
 `<meta>` tag on your page. The first tag (from top to bottom) is given
