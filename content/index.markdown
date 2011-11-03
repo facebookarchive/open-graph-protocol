@@ -25,7 +25,7 @@ properties for every page are:
 
  * `og:title` - The title of your object as it should appear within the graph,
    e.g., "The Rock".
- * `og:type` - The [type](#types) of your object, e.g., "movie".  Depending on
+ * `og:type` - The [type](#types) of your object, e.g., "video.movie".  Depending on
    the type you specify, other properties may also be required.
  * `og:image` - An image URL which should represent your object within the
    graph.
@@ -33,13 +33,13 @@ properties for every page are:
    permanent ID in the graph, e.g., "http://www.imdb.com/title/tt0117500/".
 
 As an example, the following is the Open Graph protocol markup for [The Rock on
-IMDB](http://www.imdb.com/title/tt0117500):
+IMDB](http://www.imdb.com/title/tt0117500/):
 
     <html prefix="og: http://ogp.me/ns#">
     <head>
     <title>The Rock (1996)</title>
     <meta property="og:title" content="The Rock" />
-    <meta property="og:type" content="movie" />
+    <meta property="og:type" content="video.movie" />
     <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
     <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
     ...
@@ -75,7 +75,8 @@ For example (line-break solely for display purposes):
                suave, sophisticated British agent, James Bond." />
     <meta property="og:determiner" content="the" />
     <meta property="og:locale" content="en_UK" />
-    <meta property="og:locale:alternate" content="fr_FR,es_ES" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="es_ES" />
     <meta property="og:site_name" content="IMDb" />
     <meta property="og:video" content="http://example.com/bond/trailer.swf" />
 
