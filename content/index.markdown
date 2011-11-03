@@ -75,7 +75,8 @@ For example (line-break solely for display purposes):
                suave, sophisticated British agent, James Bond." />
     <meta property="og:determiner" content="the" />
     <meta property="og:locale" content="en_UK" />
-    <meta property="og:locale:alternate" content="fr_FR,es_ES" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="es_ES" />
     <meta property="og:site_name" content="IMDb" />
     <meta property="og:video" content="http://example.com/bond/trailer.swf" />
 
