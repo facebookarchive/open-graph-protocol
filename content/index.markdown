@@ -352,7 +352,7 @@ The following types are used when defining attributes in Open Graph protocol.
 <tr>
   <td><a name="integer" href="#integer">Integer</td>
   <td>A 32-bit signed integer. In many languages integers over 32-bits become 
-    floats, so we limit the Open Grpah for easy multi-language use.</td>
+    floats, so we limit Open Graph protocol for easy multi-language use.</td>
   <td>All literals that conform to the following formats:<br><br>
 1234<br>
 -123<br>
