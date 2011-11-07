@@ -231,7 +231,7 @@ have colons in them.
 * `video:writer` - [profile](#type_profile) [array](#array) -
   Writers of the movie.
 * `video:duration` - [integer](#integer) &gt;=1 - 
-  The movies's length in seconds.
+  The movie's length in seconds.
 * `video:release_date` - [datetime](#datetime) - 
   The date the movie was released.
 * `video:tag` - [string](#string) [array](#array) -
