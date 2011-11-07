@@ -367,7 +367,7 @@ The following types are used when defining attributes in Open Graph protocol.
 
 <tr>
   <td><a name="url" href="#url">URL</td>
-  <td>A sequence of UTF-8 characters that identify a Internet resource.
+  <td>A sequence of UTF-8 characters that identify an Internet resource.
   <td>All valid URLs that utilize the http:// or https:// protocols</td>
 </tr>
 
