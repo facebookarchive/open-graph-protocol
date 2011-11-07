@@ -65,7 +65,7 @@ recommended:
    available in.
  * `og:site_name` - If your object is part of a larger web site, the name which
    should be displayed for the overall site. e.g., "IMDb".
- * `og:video` - A URL to a video file that compliments this object.
+ * `og:video` - A URL to a video file that complements this object.
 
 For example (line-break solely for display purposes):
 
