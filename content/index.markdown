@@ -300,7 +300,7 @@ yet are broadly used and agreed upon.
 
 <a name="type_website" href="#type_website">`website`</a> - Namespace URI: [`http://ogp.me/ns/website#`](http://ogp.me/ns/website)
 
-No additional propertiers other than the basic ones.
+No additional properties other than the basic ones.
 Any non-marked up webpage should be treated as `og:type` website.
 
 
