@@ -383,7 +383,8 @@ https://www.facebook.com/groups/opengraph/) or on
 http://groups.google.com/group/open-graph-protocol).
 It is currently being consumed by Facebook
 ([see their documentation](
-http://developers.facebook.com/docs/opengraph)) and
+http://developers.facebook.com/docs/opengraph)), Google ([see their documentation](
+https://developers.google.com/+/plugins/+1button/#plus-snippet)), and
 [mixi](
 http://groups.google.com/group/open-graph-protocol/browse_thread/thread/356d722abf70001d/397ec334ca87f122).
 It is being published by IMDb, Microsoft, NHL, Posterous, Rotten Tomatoes,
@@ -397,6 +398,7 @@ tools. Let the Facebook group know if you've built something awesome too!
 
 * [Facebook Object Debugger](http://developers.facebook.com/tools/debug/) -
   Facebook's official parser and debugger
+* [Google Rich Snippets Testing Tool](http://www.google.com/webmasters/tools/richsnippets) - Google Rich Snippets Testing Tool with support for Open Graph protocol in specific verticals and Custom Search Engines.
 * [OpenGraph.in](http://www.opengraph.in/) -
   a service which parses Open Graph protocol markup and outputs HTML and JSON
 * [OpenGraph for Java](http://github.com/callumj/opengraph-java) -
