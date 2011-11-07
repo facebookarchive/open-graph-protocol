@@ -397,6 +397,7 @@ tools. Let the Facebook group know if you've built something awesome too!
 
 * [Facebook Object Debugger](http://developers.facebook.com/tools/debug/) -
   Facebook's official parser and debugger
+* [Open Graph protocol tools for PHP](https://github.com/niallkennedy/open-graph-protocol-tools) - object-oriented Open Graph protocol markup builder for PHP. Includes support for Open Graph protocol September 2011 changes.
 * [OpenGraph.in](http://www.opengraph.in/) -
   a service which parses Open Graph protocol markup and outputs HTML and JSON
 * [OpenGraph for Java](http://github.com/callumj/opengraph-java) -
