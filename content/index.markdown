@@ -307,7 +307,7 @@ Any non-marked up webpage should be treated as `og:type` website.
 ---
 ## <a id="data_types" href="#data_types">Types</a>
 
-The following types are used when defining attributes in the Open Graph.
+The following types are used when defining attributes in Open Graph protocol.
 
 
 <table>
