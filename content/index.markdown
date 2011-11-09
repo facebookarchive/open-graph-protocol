@@ -398,7 +398,7 @@ tools. Let the Facebook group know if you've built something awesome too!
 
 * [Facebook Object Debugger](http://developers.facebook.com/tools/debug/) -
   Facebook's official parser and debugger
-* [Google Rich Snippets Testing Tool](http://www.google.com/webmasters/tools/richsnippets) - Google Rich Snippets Testing Tool with support for Open Graph protocol in specific verticals and Custom Search Engines.
+* [Google Rich Snippets Testing Tool](http://www.google.com/webmasters/tools/richsnippets) - Open Graph protocol support in specific verticals and Search Engines.
 * [OpenGraph.in](http://www.opengraph.in/) -
   a service which parses Open Graph protocol markup and outputs HTML and JSON
 * [OpenGraph for Java](http://github.com/callumj/opengraph-java) -
