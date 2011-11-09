@@ -65,7 +65,7 @@ recommended:
    available in.
  * `og:site_name` - If your object is part of a larger web site, the name which
    should be displayed for the overall site. e.g., "IMDb".
- * `og:video` - A URL to a video file that compliments this object.
+ * `og:video` - A URL to a video file that complements this object.
 
 For example (line-break solely for display purposes):
 
@@ -231,7 +231,7 @@ have colons in them.
 * `video:writer` - [profile](#type_profile) [array](#array) -
   Writers of the movie.
 * `video:duration` - [integer](#integer) &gt;=1 - 
-  The movies's length in seconds.
+  The movie's length in seconds.
 * `video:release_date` - [datetime](#datetime) - 
   The date the movie was released.
 * `video:tag` - [string](#string) [array](#array) -
@@ -300,14 +300,14 @@ yet are broadly used and agreed upon.
 
 <a name="type_website" href="#type_website">`website`</a> - Namespace URI: [`http://ogp.me/ns/website#`](http://ogp.me/ns/website)
 
-No additional propertiers other than the basic ones.
+No additional properties other than the basic ones.
 Any non-marked up webpage should be treated as `og:type` website.
 
 
 ---
 ## <a id="data_types" href="#data_types">Types</a>
 
-The following types are used when defining attributes in the Open Graph.
+The following types are used when defining attributes in Open Graph protocol.
 
 
 <table>
@@ -352,7 +352,7 @@ The following types are used when defining attributes in the Open Graph.
 <tr>
   <td><a name="integer" href="#integer">Integer</td>
   <td>A 32-bit signed integer. In many languages integers over 32-bits become 
-    floats, so we limit the Open Grpah for easy multi-language use.</td>
+    floats, so we limit Open Graph protocol for easy multi-language use.</td>
   <td>All literals that conform to the following formats:<br><br>
 1234<br>
 -123<br>
@@ -367,7 +367,7 @@ The following types are used when defining attributes in the Open Graph.
 
 <tr>
   <td><a name="url" href="#url">URL</td>
-  <td>A sequence of UTF-8 characters that identify a Internet resource.
+  <td>A sequence of UTF-8 characters that identify an Internet resource.
   <td>All valid URLs that utilize the http:// or https:// protocols</td>
 </tr>
 
@@ -383,7 +383,8 @@ https://www.facebook.com/groups/opengraph/) or on
 http://groups.google.com/group/open-graph-protocol).
 It is currently being consumed by Facebook
 ([see their documentation](
-http://developers.facebook.com/docs/opengraph)) and
+http://developers.facebook.com/docs/opengraph)), Google ([see their documentation](
+https://developers.google.com/+/plugins/+1button/#plus-snippet)), and
 [mixi](
 http://groups.google.com/group/open-graph-protocol/browse_thread/thread/356d722abf70001d/397ec334ca87f122).
 It is being published by IMDb, Microsoft, NHL, Posterous, Rotten Tomatoes,
@@ -398,22 +399,23 @@ tools. Let the Facebook group know if you've built something awesome too!
 * [Facebook Object Debugger](http://developers.facebook.com/tools/debug/) -
   Facebook's official parser and debugger
 * [Open Graph protocol tools for PHP](https://github.com/niallkennedy/open-graph-protocol-tools) - object-oriented Open Graph protocol markup builder for PHP. Includes support for Open Graph protocol September 2011 changes.
+* [Google Rich Snippets Testing Tool](http://www.google.com/webmasters/tools/richsnippets) - Open Graph protocol support in specific verticals and Search Engines.
 * [OpenGraph.in](http://www.opengraph.in/) -
   a service which parses Open Graph protocol markup and outputs HTML and JSON
+* [Open Graph Protocol helper for PHP](http://github.com/scottmac/opengraph) -
+  a small library for accessing of Open Graph Protocol data in PHP
+* [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) -
+  a simple parser for PHP
+* [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) -
+  a library written in Python for parsing Open Graph protocol
+  information from web sites
+* [OpenGraph Ruby](http://github.com/intridea/opengraph) -
+  Ruby Gem which parses web pages and extracts Open Graph protocol markup
 * [OpenGraph for Java](http://github.com/callumj/opengraph-java) -
   small Java class used to represent the Open Graph protocol
 * [RDF::RDFa::Parser](
   http://search.cpan.org/~tobyink/RDF-RDFa-Parser/lib/RDF/RDFa/Parser.pm) -
   Perl RDFa parser which understands the Open Graph protocol
-* [Open Graph Protocol helper for PHP](http://github.com/scottmac/opengraph) -
-  a small library for accessing of Open Graph Protocol data in PHP
-* [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) -
-  a library written in Python for parsing Open Graph protocol
-  information from web sites
-* [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) -
-  a simple parser for PHP
-* [OpenGraph Ruby](http://github.com/intridea/opengraph) -
-  Ruby Gem which parses web pages and extracts Open Graph protocol markup
 * [WordPress plugin](http://wordpress.org/extend/plugins/like) -
   add the Open Graph protocol markup to your WordPress blog
 
