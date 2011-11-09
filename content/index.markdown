@@ -401,20 +401,20 @@ tools. Let the Facebook group know if you've built something awesome too!
 * [Google Rich Snippets Testing Tool](http://www.google.com/webmasters/tools/richsnippets) - Open Graph protocol support in specific verticals and Search Engines.
 * [OpenGraph.in](http://www.opengraph.in/) -
   a service which parses Open Graph protocol markup and outputs HTML and JSON
+* [Open Graph Protocol helper for PHP](http://github.com/scottmac/opengraph) -
+  a small library for accessing of Open Graph Protocol data in PHP
+* [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) -
+  a simple parser for PHP
+* [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) -
+  a library written in Python for parsing Open Graph protocol
+  information from web sites
+* [OpenGraph Ruby](http://github.com/intridea/opengraph) -
+  Ruby Gem which parses web pages and extracts Open Graph protocol markup
 * [OpenGraph for Java](http://github.com/callumj/opengraph-java) -
   small Java class used to represent the Open Graph protocol
 * [RDF::RDFa::Parser](
   http://search.cpan.org/~tobyink/RDF-RDFa-Parser/lib/RDF/RDFa/Parser.pm) -
   Perl RDFa parser which understands the Open Graph protocol
-* [Open Graph Protocol helper for PHP](http://github.com/scottmac/opengraph) -
-  a small library for accessing of Open Graph Protocol data in PHP
-* [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) -
-  a library written in Python for parsing Open Graph protocol
-  information from web sites
-* [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) -
-  a simple parser for PHP
-* [OpenGraph Ruby](http://github.com/intridea/opengraph) -
-  Ruby Gem which parses web pages and extracts Open Graph protocol markup
 * [WordPress plugin](http://wordpress.org/extend/plugins/like) -
   add the Open Graph protocol markup to your WordPress blog
 
