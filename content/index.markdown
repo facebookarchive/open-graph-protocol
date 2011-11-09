@@ -398,10 +398,10 @@ tools. Let the Facebook group know if you've built something awesome too!
 
 * [Facebook Object Debugger](http://developers.facebook.com/tools/debug/) -
   Facebook's official parser and debugger
-* [Open Graph protocol tools for PHP](https://github.com/niallkennedy/open-graph-protocol-tools) - object-oriented Open Graph protocol markup builder for PHP. Includes support for Open Graph protocol September 2011 changes.
 * [Google Rich Snippets Testing Tool](http://www.google.com/webmasters/tools/richsnippets) - Open Graph protocol support in specific verticals and Search Engines.
 * [OpenGraph.in](http://www.opengraph.in/) -
   a service which parses Open Graph protocol markup and outputs HTML and JSON
+* [Open Graph protocol tools for PHP](https://github.com/niallkennedy/open-graph-protocol-tools) -  OGP 2011 input validator and markup generator in PHP5 objects
 * [Open Graph Protocol helper for PHP](http://github.com/scottmac/opengraph) -
   a small library for accessing of Open Graph Protocol data in PHP
 * [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) -
