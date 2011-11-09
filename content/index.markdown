@@ -65,7 +65,7 @@ recommended:
    available in.
  * `og:site_name` - If your object is part of a larger web site, the name which
    should be displayed for the overall site. e.g., "IMDb".
- * `og:video` - A URL to a video file that compliments this object.
+ * `og:video` - A URL to a video file that complements this object.
 
 For example (line-break solely for display purposes):
 
@@ -231,7 +231,7 @@ have colons in them.
 * `video:writer` - [profile](#type_profile) [array](#array) -
   Writers of the movie.
 * `video:duration` - [integer](#integer) &gt;=1 - 
-  The movies's length in seconds.
+  The movie's length in seconds.
 * `video:release_date` - [datetime](#datetime) - 
   The date the movie was released.
 * `video:tag` - [string](#string) [array](#array) -
@@ -300,14 +300,14 @@ yet are broadly used and agreed upon.
 
 <a name="type_website" href="#type_website">`website`</a> - Namespace URI: [`http://ogp.me/ns/website#`](http://ogp.me/ns/website)
 
-No additional propertiers other than the basic ones.
+No additional properties other than the basic ones.
 Any non-marked up webpage should be treated as `og:type` website.
 
 
 ---
 ## <a id="data_types" href="#data_types">Types</a>
 
-The following types are used when defining attributes in the Open Graph.
+The following types are used when defining attributes in Open Graph protocol.
 
 
 <table>
@@ -352,7 +352,7 @@ The following types are used when defining attributes in the Open Graph.
 <tr>
   <td><a name="integer" href="#integer">Integer</td>
   <td>A 32-bit signed integer. In many languages integers over 32-bits become 
-    floats, so we limit the Open Grpah for easy multi-language use.</td>
+    floats, so we limit Open Graph protocol for easy multi-language use.</td>
   <td>All literals that conform to the following formats:<br><br>
 1234<br>
 -123<br>
@@ -367,7 +367,7 @@ The following types are used when defining attributes in the Open Graph.
 
 <tr>
   <td><a name="url" href="#url">URL</td>
-  <td>A sequence of UTF-8 characters that identify a Internet resource.
+  <td>A sequence of UTF-8 characters that identify an Internet resource.
   <td>All valid URLs that utilize the http:// or https:// protocols</td>
 </tr>
 
