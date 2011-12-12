@@ -130,49 +130,44 @@ ogc:mime_type_str a rdfs:Datatype ;
 	rdfs:comment "Valid mime type strings (e.g., \"application/mp3\")."@en-US ;
 	rdfs:isDefinedBy og: ;
 	rdfs:subClassOf xsd:string .
-
 ogc:boolean_str a rdfs:Datatype ;
 	rdfs:label "boolean string"@en-US ;
 	rdfs:comment "A string representation of a true or false value.  The lexical space contains: \"true\", \"false\", \"1\", and \"0\"."@en-US ;
 	rdfs:isDefinedBy ogc: ;
 	rdfs:subClassOf xsd:string .
-
 ogc:date_time_str a rdfs:Datatype ;
 	rdfs:label "date/time string"@en-US ;
 	rdfs:comment "A string representation of a temporal value composed of a date (year, month, day) and an optional time component (hours, minutes).  The lexical space is defined by ISO 8601."@en-US ;
 	rdfs:isDefinedBy ogc: ;
 	rdfs:subClassOf xsd:string .
-
 ogc:float_str a rdfs:Datatype ;
 	rdfs:label "float string"@en-US ;
 	rdfs:comment "A string representation of a 64-bit signed floating point number.  Example lexical values include \"1.234\", \"-1.234\", \"1.2e3\", \"-1.2e3\", and \"7E-10\"."@en-US ;
 	rdfs:isDefinedBy ogc: ;
 	rdfs:subClassOf xsd:string .
-
 ogc:integer_str a rdfs:Datatype ;
 	rdfs:label "integer string"@en-US ;
 	rdfs:comment "A string representation of a 32-bit signed integer.  Example lexical values include \"1234\" and \"-123\"."@en-US ;
 	rdfs:isDefinedBy ogc: ;
 	rdfs:subClassOf xsd:string .
-
 ogc:string a rdfs:Datatype ;
 	rdfs:label "UTF-8 encoded string"@en-US ;
 	rdfs:comment "A UTF-8 encoded string of Unicode characters."@en-US ;
 	rdfs:isDefinedBy ogc: ;
 	rdfs:subClassOf xsd:string .
-
 ogc:url a rdfs:Datatype ;
 	rdfs:label "UTF-8 encoded URL"@en-US ;
 	rdfs:comment "A UTF-8 encoded string forming a valid URL having the http or https scheme."@en-US ;
 	rdfs:isDefinedBy ogc: ;
 	rdfs:subClassOf ogc:string .
-
 ogc:determiner_str a rdfs:Datatype ;
 	owl:oneOf ("" "the" "a" "an" "auto") ;
 	rdfs:label "determiner"@en-US ;
 	rdfs:comment "The lexical space: \"\", \"the\", \"a\", \"an\", and \"auto\"."@en-US ;
 	rdfs:isDefinedBy ogc: ;
-	rdfs:subClassOf ogc:string .
+	rdfs:subClassOf xsd:string .
+
+
 
 
 ###################################################################
