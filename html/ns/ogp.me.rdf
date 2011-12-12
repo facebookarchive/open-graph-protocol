@@ -198,4 +198,10 @@
     <rdfs:comment xml:lang="en-US">[DEPRECATED] Universal Product Code for your object.</rdfs:comment>
     <rdfs:seeAlso rdf:resource="http://purl.org/goodrelations/v1#hasEAN_UCC-13" />
   </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#feed">
+    <rdfs:label xml:lang="en-US">feed</rdfs:property>
+    <rdfs:label xml:lang="en-US">RSS feed that show change in page</rdfs:label>
+    <rdfs:comment xml:lang="en-US">[DEPRECATED] The link to RSS feed which shows changes in page. Useful for blogs.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+  </rdf:Property>
 </rdf:RDF>

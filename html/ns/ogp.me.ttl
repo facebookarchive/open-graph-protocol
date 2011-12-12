@@ -178,3 +178,8 @@ og:upc a rdf:Property ;
   rdfs:label "universal product code"@en-US ;
   rdfs:comment "[DEPRECATED] Universal Product Code for your object."@en-US ;
   rdfs:seeAlso gr:hasEAN_UCC-13 .
+og:feed a rdf:Property ;
+  rdfs:label "feed"@en-US ;
+  rdfs:label "RSS feed that show change in page"@en-US ;
+  rdfs:comment "[DEPRECATED] The link to RSS feed which shows changes in page. Useful for blogs."@en-US ;
+  rdfs:isDefinedBy og: .
