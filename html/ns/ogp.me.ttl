@@ -151,13 +151,13 @@ ogc:integer_str a rdfs:Datatype ;
   rdfs:isDefinedBy ogc: ;
   rdfs:subClassOf xsd:string .
 ogc:string a rdfs:Datatype ;
-  rdfs:label "UTF-8 encoded string"@en-US ;
-  rdfs:comment "A UTF-8 encoded string of Unicode characters."@en-US ;
+  rdfs:label "Unicode string"@en-US ;
+  rdfs:comment "A string of Unicode characters."@en-US ;
   rdfs:isDefinedBy ogc: ;
   rdfs:subClassOf xsd:string .
 ogc:url a rdfs:Datatype ;
-  rdfs:label "UTF-8 encoded URL"@en-US ;
-  rdfs:comment "A UTF-8 encoded string forming a valid URL having the http or https scheme."@en-US ;
+  rdfs:label "URL"@en-US ;
+  rdfs:comment "A string of Unicode characters forming a valid URL having the http or https scheme."@en-US ;
   rdfs:isDefinedBy ogc: ;
   rdfs:subClassOf ogc:string .
 ogc:determiner_str a rdfs:Datatype ;
