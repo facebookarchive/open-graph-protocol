@@ -1,214 +1,214 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:gr="http://purl.org/goodrelations/v1#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:og="http://ogp.me/ns#" xmlns:ogc="http://ogp.me/ns/class#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
 
-	<!-- PROPERTIES -->
+  <!-- PROPERTIES -->
 
-	<rdf:Property rdf:about="http://ogp.me/ns#url">
-		<rdfs:label xml:lang="en-US">url</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "http://www.imdb.com/title/tt0117500/".</rdfs:comment>
-		<rdfs:seeAlso rdf:resource="http://purl.org/dc/elements/1.1/identifier" />
-		<rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/homepage" />
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#type">
-		<rdfs:label xml:lang="en-US">type</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The type of your object, e.g., "movie".  Depending on the type you specify, other properties may also be required.</rdfs:comment>
-		<rdfs:seeAlso rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" />
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#string" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#title">
-		<rdfs:label xml:lang="en-US">title</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The title of the object as it should appear within the graph, e.g.,  "The Rock".</rdfs:comment>
-		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label" />
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#string" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#locale">
-		<rdfs:label xml:lang="en-US">locale</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A Unix locale in which this markup is rendered.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#string" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#image">
-		<rdfs:label xml:lang="en-US">image</rdfs:label>
-		<rdfs:comment xml:lang="en-US">An image URL which should represent your object within the graph.</rdfs:comment>
-		<rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/depiction" />
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#image:secure_url">
-		<rdfs:label xml:lang="en-US">image secure url</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A secure image URL which should represent your object within the graph.</rdfs:comment>
-		<rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/depiction" />
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#image:type">
-		<rdfs:label xml:lang="en-US">image type</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The mime type of an image.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#mime_type_str" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#image:width">
-		<rdfs:label xml:lang="en-US">image width</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The width of an image.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#integer_str" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#image:height">
-		<rdfs:label xml:lang="en-US">image height</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The height of an image.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#integer_str" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#video">
-		<rdfs:label xml:lang="en-US">video</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A relevant video URL for your object.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#video:secure_url">
-		<rdfs:label xml:lang="en-US">video secure URL</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A relevant, secure video URL for your object.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#video:type">
-		<rdfs:label xml:lang="en-US">video type</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The mime type of a video e.g., "application/x-shockwave-flash"</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#mime_type_str" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#video:width">
-		<rdfs:label xml:lang="en-US">video width</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The width of a video.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#integer_str" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#video:height">
-		<rdfs:label xml:lang="en-US">video height</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The height of a video.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#integer_str" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#audio">
-		<rdfs:label xml:lang="en-US">audio</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A relevant audio URL for your object.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#audio:secure_url">
-		<rdfs:label xml:lang="en-US">audio secure URL</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A relevant, secure audio URL for your object.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#audio:type">
-		<rdfs:label xml:lang="en-US">audio type</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The mime type of an audio file e.g., "application/mp3"</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#mime_type_str" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#description">
-		<rdfs:label xml:lang="en-US">description</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A one to two sentence description of your object.</rdfs:comment>
-		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment" />
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#string" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#site_name">
-		<rdfs:label xml:lang="en-US">site name</rdfs:label>
-		<rdfs:comment xml:lang="en-US">If your object is part of a larger web site, the name which should be displayed for the overall site. e.g., "IMDb".</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#string" />
-	</rdf:Property>
-	<rdf:Property rdf:about="http://ogp.me/ns#determiner">
-		<rdfs:label xml:lang="en-US">determiner</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The word to precede the object's title in a sentence (e.g., "the" in "the statue of liberty").  Valid values are "a", "an", "the", "", and "auto".</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
-		<rdfs:range rdf:resource="http://ogp.me/ns/class#determiner_str" />
-	</rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#url">
+    <rdfs:label xml:lang="en-US">url</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "http://www.imdb.com/title/tt0117500/".</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://purl.org/dc/elements/1.1/identifier" />
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/homepage" />
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#type">
+    <rdfs:label xml:lang="en-US">type</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The type of your object, e.g., "movie".  Depending on the type you specify, other properties may also be required.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" />
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#string" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#title">
+    <rdfs:label xml:lang="en-US">title</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The title of the object as it should appear within the graph, e.g.,  "The Rock".</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label" />
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#string" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#locale">
+    <rdfs:label xml:lang="en-US">locale</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A Unix locale in which this markup is rendered.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#string" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#image">
+    <rdfs:label xml:lang="en-US">image</rdfs:label>
+    <rdfs:comment xml:lang="en-US">An image URL which should represent your object within the graph.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/depiction" />
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#image:secure_url">
+    <rdfs:label xml:lang="en-US">image secure url</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A secure image URL which should represent your object within the graph.</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://xmlns.com/foaf/0.1/depiction" />
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#image:type">
+    <rdfs:label xml:lang="en-US">image type</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The mime type of an image.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#mime_type_str" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#image:width">
+    <rdfs:label xml:lang="en-US">image width</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The width of an image.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#integer_str" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#image:height">
+    <rdfs:label xml:lang="en-US">image height</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The height of an image.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#integer_str" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#video">
+    <rdfs:label xml:lang="en-US">video</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A relevant video URL for your object.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#video:secure_url">
+    <rdfs:label xml:lang="en-US">video secure URL</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A relevant, secure video URL for your object.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#video:type">
+    <rdfs:label xml:lang="en-US">video type</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The mime type of a video e.g., "application/x-shockwave-flash"</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#mime_type_str" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#video:width">
+    <rdfs:label xml:lang="en-US">video width</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The width of a video.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#integer_str" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#video:height">
+    <rdfs:label xml:lang="en-US">video height</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The height of a video.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#integer_str" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#audio">
+    <rdfs:label xml:lang="en-US">audio</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A relevant audio URL for your object.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#audio:secure_url">
+    <rdfs:label xml:lang="en-US">audio secure URL</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A relevant, secure audio URL for your object.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#url" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#audio:type">
+    <rdfs:label xml:lang="en-US">audio type</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The mime type of an audio file e.g., "application/mp3"</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#mime_type_str" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#description">
+    <rdfs:label xml:lang="en-US">description</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A one to two sentence description of your object.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment" />
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#string" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#site_name">
+    <rdfs:label xml:lang="en-US">site name</rdfs:label>
+    <rdfs:comment xml:lang="en-US">If your object is part of a larger web site, the name which should be displayed for the overall site. e.g., "IMDb".</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#string" />
+  </rdf:Property>
+  <rdf:Property rdf:about="http://ogp.me/ns#determiner">
+    <rdfs:label xml:lang="en-US">determiner</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The word to precede the object's title in a sentence (e.g., "the" in "the statue of liberty").  Valid values are "a", "an", "the", "", and "auto".</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns#" />
+    <rdfs:range rdf:resource="http://ogp.me/ns/class#determiner_str" />
+  </rdf:Property>
 
-	<!-- DATATYPES -->
-	
-	<rdfs:Datatype rdf:about="http://ogp.me/ns/class#mime_type_str">
-		<rdfs:label xml:lang="en-US">mime type string</rdfs:label>
-		<rdfs:comment xml:lang="en-US">Valid mime type strings (e.g., "application/mp3").</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
-		<rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
-	</rdfs:Datatype>
-	<rdfs:Datatype rdf:about="http://ogp.me/ns/class#boolean_str">
-		<rdfs:label xml:lang="en-US">boolean string</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A string representation of a true or false value.  The lexical space contains: "true", "false", "1", and "0".</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
-		<rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
-	</rdfs:Datatype>
-	<rdfs:Datatype rdf:about="http://ogp.me/ns/class#date_time_str">
-		<rdfs:label xml:lang="en-US">date/time string</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A string representation of a temporal value composed of a date (year, month, day) and an optional time component (hours, minutes).  The lexical space is defined by ISO 8601.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
-		<rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
-	</rdfs:Datatype>
-	<rdfs:Datatype rdf:about="http://ogp.me/ns/class#float_str">
-		<rdfs:label xml:lang="en-US">float string</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A string representation of a 64-bit signed floating point number.  Example lexical values include "1.234", "-1.234", "1.2e3", "-1.2e3", and "7E-10".</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
-		<rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
-	</rdfs:Datatype>
-	<rdfs:Datatype rdf:about="http://ogp.me/ns/class#integer_str">
-		<rdfs:label xml:lang="en-US">integer string</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A string representation of a 32-bit signed integer.  Example lexical values include "1234" and "-123".</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
-		<rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
-	</rdfs:Datatype>
-	<rdfs:Datatype rdf:about="http://ogp.me/ns/class#string">
-		<rdfs:label xml:lang="en-US">UTF-8 encoded string</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A UTF-8 encoded string of Unicode characters.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
-		<rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
-	</rdfs:Datatype>
-	<rdfs:Datatype rdf:about="http://ogp.me/ns/class#url">
-		<rdfs:label xml:lang="en-US">UTF-* encoded URL</rdfs:label>
-		<rdfs:comment xml:lang="en-US">A UTF-8 encoded string forming a valid URL having the http or https scheme.</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
-		<rdfs:subClassOf rdf:resource="http://ogp.me/ns/class#string" />
-	</rdfs:Datatype>
-	<rdfs:Datatype rdf:about="http://ogp.me/ns/class#determiner_str">
-		<owl:oneOf>
-			<rdf:Description>
-				<rdf:first></rdf:first>
-				<rdf:rest>
-					<rdf:Description>
-						<rdf:first>the</rdf:first>
-						<rdf:rest>
-							<rdf:Description>
-								<rdf:first>a</rdf:first>
-								<rdf:rest>
-									<rdf:Description>
-										<rdf:first>an</rdf:first>
-										<rdf:rest>
-											<rdf:Description>
-												<rdf:first>auto</rdf:first>
-												<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" />
-											</rdf:Description>
-										</rdf:rest>
-									</rdf:Description>
-								</rdf:rest>
-							</rdf:Description>
-						</rdf:rest>
-					</rdf:Description>
-				</rdf:rest>
-			</rdf:Description>
-		</owl:oneOf>
-		<rdfs:label xml:lang="en-US">determiner</rdfs:label>
-		<rdfs:comment xml:lang="en-US">The lexical space: "", "the", "a", "an", and "auto".</rdfs:comment>
-		<rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
-		<rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
-	</rdfs:Datatype>
+  <!-- DATATYPES -->
+  
+  <rdfs:Datatype rdf:about="http://ogp.me/ns/class#mime_type_str">
+    <rdfs:label xml:lang="en-US">mime type string</rdfs:label>
+    <rdfs:comment xml:lang="en-US">Valid mime type strings (e.g., "application/mp3").</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://ogp.me/ns/class#boolean_str">
+    <rdfs:label xml:lang="en-US">boolean string</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A string representation of a true or false value.  The lexical space contains: "true", "false", "1", and "0".</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://ogp.me/ns/class#date_time_str">
+    <rdfs:label xml:lang="en-US">date/time string</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A string representation of a temporal value composed of a date (year, month, day) and an optional time component (hours, minutes).  The lexical space is defined by ISO 8601.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://ogp.me/ns/class#float_str">
+    <rdfs:label xml:lang="en-US">float string</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A string representation of a 64-bit signed floating point number.  Example lexical values include "1.234", "-1.234", "1.2e3", "-1.2e3", and "7E-10".</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://ogp.me/ns/class#integer_str">
+    <rdfs:label xml:lang="en-US">integer string</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A string representation of a 32-bit signed integer.  Example lexical values include "1234" and "-123".</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://ogp.me/ns/class#string">
+    <rdfs:label xml:lang="en-US">UTF-8 encoded string</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A UTF-8 encoded string of Unicode characters.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://ogp.me/ns/class#url">
+    <rdfs:label xml:lang="en-US">UTF-* encoded URL</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A UTF-8 encoded string forming a valid URL having the http or https scheme.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
+    <rdfs:subClassOf rdf:resource="http://ogp.me/ns/class#string" />
+  </rdfs:Datatype>
+  <rdfs:Datatype rdf:about="http://ogp.me/ns/class#determiner_str">
+    <owl:oneOf>
+      <rdf:Description>
+        <rdf:first></rdf:first>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first>the</rdf:first>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>a</rdf:first>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first>an</rdf:first>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first>auto</rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil" />
+                      </rdf:Description>
+                    </rdf:rest>
+                  </rdf:Description>
+                </rdf:rest>
+              </rdf:Description>
+            </rdf:rest>
+          </rdf:Description>
+        </rdf:rest>
+      </rdf:Description>
+    </owl:oneOf>
+    <rdfs:label xml:lang="en-US">determiner</rdfs:label>
+    <rdfs:comment xml:lang="en-US">The lexical space: "", "the", "a", "an", and "auto".</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
+  </rdfs:Datatype>
 
-	<!-- DEPRECATED PROPERTIES!  DO NOT READ ON UNLESS YOU MUST! -->
+  <!-- DEPRECATED PROPERTIES!  DO NOT READ ON UNLESS YOU MUST! -->
 
   <rdf:Property rdf:about="http://ogp.me/ns#audio:title">
     <rdfs:label xml:lang="en-US">audio title</rdfs:label>
