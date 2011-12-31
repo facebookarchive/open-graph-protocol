@@ -164,14 +164,14 @@
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
   </rdfs:Datatype>
   <rdfs:Datatype rdf:about="http://ogp.me/ns/class#string">
-    <rdfs:label xml:lang="en-US">UTF-8 encoded string</rdfs:label>
-    <rdfs:comment xml:lang="en-US">A UTF-8 encoded string of Unicode characters.</rdfs:comment>
+    <rdfs:label xml:lang="en-US">Unicode string</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A string of Unicode characters.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2001/XMLSchema#string" />
   </rdfs:Datatype>
   <rdfs:Datatype rdf:about="http://ogp.me/ns/class#url">
-    <rdfs:label xml:lang="en-US">UTF-* encoded URL</rdfs:label>
-    <rdfs:comment xml:lang="en-US">A UTF-8 encoded string forming a valid URL having the http or https scheme.</rdfs:comment>
+    <rdfs:label xml:lang="en-US">URL</rdfs:label>
+    <rdfs:comment xml:lang="en-US">A string of Unicode characters forming a valid URL having the http or https scheme.</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://ogp.me/ns/class#" />
     <rdfs:subClassOf rdf:resource="http://ogp.me/ns/class#string" />
   </rdfs:Datatype>
