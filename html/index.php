@@ -20,9 +20,9 @@ $html = Markdown($markdown);
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-    <title>The Open Graph Protocol</title>
+    <title>The Open Graph protocol</title>
     <link rel="stylesheet" href="base.css" type="text/css">
-    <meta property="og:title" content="Open Graph Protocol">
+    <meta property="og:title" content="Open Graph protocol">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://ogp.me/">
     <meta property="og:image" content="http://ogp.me/logo.png">
