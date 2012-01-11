@@ -2,7 +2,7 @@
 require_once( dirname( dirname( __FILE__ ) ) '/lib/markdown.php' );
 
 if ($_SERVER['HTTP_HOST'] != 'ogp.me') {
-  header("Location: http://ogp.me/", false, "301");
+  header( 'Location: http://ogp.me/', false, 301 );
   exit;
 }
 
