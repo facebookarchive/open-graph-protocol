@@ -16,10 +16,10 @@ if (!$markdown) {
 $html = Markdown($markdown);
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
-  <head>
-                <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<html>
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
     <title>The Open Graph Protocol</title>
     <link rel="stylesheet" href="base.css" type="text/css"/>
     <meta property="og:title" content="Open Graph Protocol" />
@@ -27,9 +27,9 @@ $html = Markdown($markdown);
     <meta property="og:url" content="http://ogp.me/" />
     <meta property="og:image" content="http://ogp.me/logo.png" />
     <meta property="og:description" content="The Open Graph protocol enables any web page to become a rich object in a social graph. " />
-    <meta property="fb:app_id" content="115190258555800" />
-                <link rel="alternate" type="application/rdf+xml" href="http://ogp.me/ns/ogp.me.rdf" />
-                <link rel="alternate" type="text/turtle" href="http://ogp.me/ns/ogp.me.ttl" />
+    <meta prefix="fb: http://ogp.me/ns/fb#" property="fb:app_id" content="115190258555800" />
+    <link rel="alternate" type="application/rdf+xml" href="http://ogp.me/ns/ogp.me.rdf" />
+    <link rel="alternate" type="text/turtle" href="http://ogp.me/ns/ogp.me.ttl" />
   </head>
   <body>
     <div id="body">
