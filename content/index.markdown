@@ -293,8 +293,8 @@ yet are broadly used and agreed upon.
 
 <a name="type_profile" href="#type_profile">`profile`</a> - Namespace URI: [`http://ogp.me/ns/profile#`](http://ogp.me/ns/profile)
 
-* `profile:first_name` - [string](#string) - Their given name.
-* `profile:last_name` - [string](#string) - Their family name.
+* `profile:first_name` - [string](#string) - A name normally given to an individual by a parent or self-chosen.
+* `profile:last_name` - [string](#string) - A name inherited from a family or marriage and by which the individual is commonly known.
 * `profile:username` - [string](#string) - A short unique string to identify them.
 * `profile:gender` - [enum](#enum)(male, female) - Their gender.
 
