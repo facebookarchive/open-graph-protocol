@@ -9,7 +9,7 @@ if ($_SERVER['HTTP_HOST'] != 'ogp.me') {
 $markdown = @file_get_contents("../content/index.markdown");
 
 if (!$markdown) {
-  header("HTTP/1.1 500 Internal Server Error");
+  header( 'HTTP/1.1 500 Internal Server Error', true, 500 );
   exit;
 }
 
