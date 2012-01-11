@@ -37,17 +37,15 @@ $html = Markdown($markdown);
   <body>
     <div id="body">
     <div id="header">
-      <h1>The Open Graph Protocol</h1>
-      <img src="http://ogp.me/logo.png" />
+      <h1>The Open Graph protocol</h1>
+      <img alt="Open Graph protocol logo" src="http://ogp.me/logo.png" width="300" height="300">
     </div>
     <div id="content">
       <?= $html ?>
     </div>
     <div id="footer">
       <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fogp.me%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px; height:80px;"></iframe>
-      <p>The Open Graph protocol was originally created at Facebook and is inspired by <a href="http://en.wikipedia.org/wiki/Dublin_Core">Dublin Core</a>, <a href="http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html">link-rel canonical</a>, <a href="http://microformats.org/">Microformats</a>, and <a href="http://en.wikipedia.org/wiki/RDFa">RDFa</a>. The specification described on this page is available under the <a href="http://openwebfoundation.org/legal/the-0-9-agreements---necessary-claims">Open Web Foundation Agreement, Version 0.9</a>. This website is <a href="https://github.com/facebook/open-graph-protocol">Open Source</a>. Last updated 
-                        <?= date('F dS, Y', filemtime( dirname( dirname( __FILE__ ) ) . '/content/index.markdown')) ?>
-                        </p>
+      <p>The Open Graph protocol was originally created at Facebook and is inspired by <a href="http://en.wikipedia.org/wiki/Dublin_Core">Dublin Core</a>, <a href="http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html">link-rel canonical</a>, <a href="http://microformats.org/">Microformats</a>, and <a href="http://en.wikipedia.org/wiki/RDFa">RDFa</a>. The specification described on this page is available under the <a href="http://openwebfoundation.org/legal/the-0-9-agreements---necessary-claims">Open Web Foundation Agreement, Version 0.9</a>. This website is <a href="https://github.com/facebook/open-graph-protocol">Open Source</a>. Last updated <? $updated_time = filemtime( dirname( dirname( __FILE__ ) ) . '/content/index.markdown' ); ?><time pubdate="<?php echo date('c', $updated_time); ?>"><?php echo date( 'F dS, Y', $updated_time ); ?></time></p>
     </div>
     </div>
 <script type="text/javascript">
