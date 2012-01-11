@@ -1,12 +1,15 @@
 <?php
-require_once( dirname( dirname( __FILE__ ) ) . '/lib/markdown.php' );
+
+$base_dir = dirname( dirname( __FILE__ ) );
+
+require_once( $base_dir . '/lib/markdown.php' );
 
 if ($_SERVER['HTTP_HOST'] != 'ogp.me') {
   header( 'Location: http://ogp.me/', false, 301 );
   exit;
 }
 
-$markdown = @file_get_contents("../content/index.markdown");
+$markdown = @file_get_contents( $base_dir . '/content/index.markdown' );
 
 if (!$markdown) {
   header( 'HTTP/1.1 500 Internal Server Error', true, 500 );
@@ -41,11 +44,11 @@ $html = Markdown($markdown);
       <img alt="Open Graph protocol logo" src="http://ogp.me/logo.png" width="300" height="300">
     </div>
     <div id="content">
-      <?= $html ?>
+      <?php echo $html; ?>
     </div>
     <div id="footer">
       <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fogp.me%2F&send=false&layout=standard&width=450&show_faces=true&action=like&colorscheme=light&height=80&appId=115190258555800" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
-      <p>The Open Graph protocol was originally created at Facebook and is inspired by <a href="http://en.wikipedia.org/wiki/Dublin_Core">Dublin Core</a>, <a href="http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html">link-rel canonical</a>, <a href="http://microformats.org/">Microformats</a>, and <a href="http://en.wikipedia.org/wiki/RDFa">RDFa</a>. The specification described on this page is available under the <a href="http://openwebfoundation.org/legal/the-0-9-agreements---necessary-claims">Open Web Foundation Agreement, Version 0.9</a>. This website is <a href="https://github.com/facebook/open-graph-protocol">Open Source</a>. Last updated <? $updated_time = filemtime( dirname( dirname( __FILE__ ) ) . '/content/index.markdown' ); ?><time pubdate="<?php echo date('c', $updated_time); ?>"><?php echo date( 'F dS, Y', $updated_time ); ?></time></p>
+      <p>The Open Graph protocol was originally created at Facebook and is inspired by <a href="http://en.wikipedia.org/wiki/Dublin_Core">Dublin Core</a>, <a href="http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html">link-rel canonical</a>, <a href="http://microformats.org/">Microformats</a>, and <a href="http://en.wikipedia.org/wiki/RDFa">RDFa</a>. The specification described on this page is available under the <a href="http://openwebfoundation.org/legal/the-0-9-agreements---necessary-claims">Open Web Foundation Agreement, Version 0.9</a>. This website is <a href="https://github.com/facebook/open-graph-protocol">Open Source</a>. Last updated <?php $updated_time = filemtime( $base_dir . '/content/index.markdown' ); ?><time pubdate="<?php echo date('c', $updated_time); ?>"><?php echo date( 'F dS, Y', $updated_time ); ?></time></p>
     </div>
     </div>
 <script type="text/javascript">
