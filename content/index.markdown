@@ -74,7 +74,7 @@ For example (line-break solely for display purposes):
       content="Sean Connery found fame and fortune as the
                suave, sophisticated British agent, James Bond." />
     <meta property="og:determiner" content="the" />
-    <meta property="og:locale" content="en_UK" />
+    <meta property="og:locale" content="en_GB" />
     <meta property="og:locale:alternate" content="fr_FR" />
     <meta property="og:locale:alternate" content="es_ES" />
     <meta property="og:site_name" content="IMDb" />
