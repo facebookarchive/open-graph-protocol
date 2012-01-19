@@ -386,7 +386,7 @@ It is currently being consumed by Facebook
 http://developers.facebook.com/docs/opengraph)), Google ([see their documentation](
 https://developers.google.com/+/plugins/+1button/#plus-snippet)), and
 [mixi](
-http://groups.google.com/group/open-graph-protocol/browse_thread/thread/356d722abf70001d/397ec334ca87f122).
+http://developer.mixi.co.jp/en/connect/mixi_plugin/mixi_check/spec_mixi_check/).
 It is being published by IMDb, Microsoft, NHL, Posterous, Rotten Tomatoes,
 TIME, Yelp, and many many others.
 
