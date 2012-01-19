@@ -383,7 +383,7 @@ https://www.facebook.com/groups/opengraph/) or on
 http://groups.google.com/group/open-graph-protocol).
 It is currently being consumed by Facebook
 ([see their documentation](
-http://developers.facebook.com/docs/opengraph)), Google ([see their documentation](
+http://developers.facebook.com/docs/opengraph/)), Google ([see their documentation](
 https://developers.google.com/+/plugins/+1button/#plus-snippet)), and
 [mixi](
 http://developer.mixi.co.jp/en/connect/mixi_plugin/mixi_check/spec_mixi_check/).
