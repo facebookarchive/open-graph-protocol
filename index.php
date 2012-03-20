@@ -4,11 +4,6 @@ $base_dir = dirname( __FILE__ );
 
 require_once( $base_dir . '/lib/markdown.php' );
 
-if ($_SERVER['HTTP_HOST'] != 'ogp.me') {
-  header( 'Location: http://ogp.me/', false, 301 );
-  exit;
-}
-
 $markdown = @file_get_contents( $base_dir . '/content/index.markdown' );
 
 if (!$markdown) {
