@@ -1,8 +1,19 @@
 RewriteEngine On
 
+# Facebook Apps
+# http://ogp.me/ns/fb/social_drinking
 RewriteRule fb/(.+) http://graph.facebook.com/schema/og/fb/$1 [L]
+
+# The root Facebook Namespace
+# http://ogp.me/ns/fb
+# http://ogp.me/ns/fb/
 RewriteRule fb/? http://graph.facebook.com/schema/og/ [L]
-RewriteRule / ns/ [L]
-RewriteRule ^/ns/class /ns [L]
-RewriteRule (ogp.me..*) $1 [L]
-RewriteRule ([^/]+) http://graph.facebook.com/schema/og/$1 [L]
+
+# Vertical OG Namespaces
+# http://ogp.me/ns/music
+# http://ogp.me/ns/book
+# The NS means it won't be used for subrequests
+RewriteRule ^([^/]+)$ http://graph.facebook.com/schema/og/$1 [L,NS]
+
+# The root OG Namespace is handled by index.php
+# http://ogp/me/nsa
