@@ -1,6 +1,6 @@
 <?php
 
-$base_dir = dirname( dirname( __FILE__ ) );
+$base_dir = dirname( __FILE__ );
 
 require_once( $base_dir . '/lib/markdown.php' );
 
