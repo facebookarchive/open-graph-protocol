@@ -417,6 +417,6 @@ tools. Let the Facebook group know if you've built something awesome too!
   http://search.cpan.org/~tobyink/RDF-RDFa-Parser/lib/RDF/RDFa/Parser.pm) -
   Perl RDFa parser which understands the Open Graph protocol
 * [WordPress plugin](http://wordpress.org/extend/plugins/facebook/) -
-  Facebook's official Wordpress plugin, which adds Open Graph metadata to Wordpress powered sites. 
+  Facebook's official WordPress plugin, which adds Open Graph metadata to WordPress powered sites. 
 
 ---
