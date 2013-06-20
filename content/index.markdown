@@ -399,8 +399,6 @@ tools. Let the Facebook group know if you've built something awesome too!
 * [Facebook Object Debugger](http://developers.facebook.com/tools/debug/) -
   Facebook's official parser and debugger
 * [Google Rich Snippets Testing Tool](http://www.google.com/webmasters/tools/richsnippets) - Open Graph protocol support in specific verticals and Search Engines.
-* [OpenGraph.in](http://www.opengraph.in/) -
-  a service which parses Open Graph protocol markup and outputs HTML and JSON
 * [PHP Validator and Markup Generator](https://github.com/niallkennedy/open-graph-protocol-tools) -  OGP 2011 input validator and markup generator in PHP5 objects
 * [PHP Consumer](http://github.com/scottmac/opengraph) -
   a small library for accessing of Open Graph Protocol data in PHP
@@ -416,7 +414,8 @@ tools. Let the Facebook group know if you've built something awesome too!
 * [RDF::RDFa::Parser](
   http://search.cpan.org/~tobyink/RDF-RDFa-Parser/lib/RDF/RDFa/Parser.pm) -
   Perl RDFa parser which understands the Open Graph protocol
-* [WordPress plugin](http://wordpress.org/extend/plugins/facebook/) -
+* [WordPress plugin](http://wordpress.org/plugins/facebook/) -
   Facebook's official WordPress plugin, which adds Open Graph metadata to WordPress powered sites. 
-
+* [Alternate WordPress OGP plugin](wordpress.org/plugins/wp-facebook-open-graph-protocol) -
+  A simple lightweight WordPress plugin which adds Open Graph metadata to WordPress powered sites.
 ---
