@@ -384,7 +384,7 @@ http://groups.google.com/group/open-graph-protocol).
 It is currently being consumed by Facebook
 ([see their documentation](
 http://developers.facebook.com/docs/opengraph/)), Google ([see their documentation](
-https://developers.google.com/+/plugins/+1button/#plus-snippet)), and
+https://developers.google.com/+/web/+1button/#plus-snippet)), and
 [mixi](
 http://developer.mixi.co.jp/en/connect/mixi_plugin/mixi_check/spec_mixi_check/).
 It is being published by IMDb, Microsoft, NHL, Posterous, Rotten Tomatoes,
@@ -416,6 +416,6 @@ tools. Let the Facebook group know if you've built something awesome too!
   Perl RDFa parser which understands the Open Graph protocol
 * [WordPress plugin](http://wordpress.org/plugins/facebook/) -
   Facebook's official WordPress plugin, which adds Open Graph metadata to WordPress powered sites. 
-* [Alternate WordPress OGP plugin](wordpress.org/plugins/wp-facebook-open-graph-protocol) -
+* [Alternate WordPress OGP plugin](http://wordpress.org/plugins/wp-facebook-open-graph-protocol/) -
   A simple lightweight WordPress plugin which adds Open Graph metadata to WordPress powered sites.
 ---
