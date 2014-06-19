@@ -409,6 +409,8 @@ tools. Let the Facebook group know if you've built something awesome too!
   information from web sites
 * [OpenGraph Ruby](http://github.com/intridea/opengraph) -
   Ruby Gem which parses web pages and extracts Open Graph protocol markup
+* [Acts as Graph Object](https://github.com/fredkelly/acts_as_graph_object)
+  ActiveRecord extension that maps models to Facebook Open Graph objects.
 * [OpenGraph for Java](http://github.com/callumj/opengraph-java) -
   small Java class used to represent the Open Graph protocol
 * [RDF::RDFa::Parser](
