@@ -404,6 +404,8 @@ tools. Let the Facebook group know if you've built something awesome too!
   a small library for accessing of Open Graph Protocol data in PHP
 * [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) -
   a simple parser for PHP
+* [Essence](http://github.com/felixgirault/essence) -
+  a simple PHP library which handles Open Graph and OEmbed protocols
 * [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) -
   a library written in Python for parsing Open Graph protocol
   information from web sites
