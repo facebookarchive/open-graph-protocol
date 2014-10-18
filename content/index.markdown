@@ -418,4 +418,5 @@ tools. Let the Facebook group know if you've built something awesome too!
   Facebook's official WordPress plugin, which adds Open Graph metadata to WordPress powered sites. 
 * [Alternate WordPress OGP plugin](http://wordpress.org/plugins/wp-facebook-open-graph-protocol/) -
   A simple lightweight WordPress plugin which adds Open Graph metadata to WordPress powered sites.
+* [Embed Articles](http://embedarticles.com) - A web application service platform for site discovery relating to the implementation of OGP metadatas and schema.org's schemas.
 ---
