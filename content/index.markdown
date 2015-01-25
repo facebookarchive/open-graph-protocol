@@ -35,8 +35,8 @@ properties for every page are:
 As an example, the following is the Open Graph protocol markup for [The Rock on
 IMDB](http://www.imdb.com/title/tt0117500/):
 
-    <html prefix="og: http://ogp.me/ns#">
-    <head>
+    <html>
+    <head prefix="og: http://ogp.me/ns#">
     <title>The Rock (1996)</title>
     <meta property="og:title" content="The Rock" />
     <meta property="og:type" content="video.movie" />
