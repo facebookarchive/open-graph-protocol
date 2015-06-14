@@ -29,7 +29,7 @@ $html = Markdown($markdown);
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
     <meta property="og:description" content="The Open Graph protocol enables any web page to become a rich object in a social graph.">
-    <meta prefix="fb: http://ogp.me/ns/fb#" property="fb:app_id" content="115190258555800">
+    <meta prefix="fb:http://ogp.me/ns/fb#" property="fb:app_id" content="115190258555800">
     <link rel="alternate" type="application/rdf+xml" href="http://ogp.me/ns/ogp.me.rdf">
     <link rel="alternate" type="text/turtle" href="http://ogp.me/ns/ogp.me.ttl">
   </head>
