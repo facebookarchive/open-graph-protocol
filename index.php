@@ -2,8 +2,6 @@
 
 $base_dir = dirname( __FILE__ );
 
-require_once( $base_dir . '/lib/markdown.php' );
-
 $markdown = @file_get_contents( $base_dir . '/content/index.markdown' );
 
 if (!$markdown) {
@@ -11,7 +9,11 @@ if (!$markdown) {
   exit;
 }
 
-$html = Markdown($markdown);
+require_once 'lib/Michelf/Markdown.inc.php';
+
+use \Michelf\Markdown;
+
+$html = Markdown::defaultTransform($markdown);
 ?>
 <!DOCTYPE html>
 <html>
