@@ -1,4 +1,15 @@
 <?php
+/**
+ * The Open Graph Protocol website
+ * 
+ * The Open Graph protocol enables any web page to become a rich object in a social graph.
+ * For instance, this is used on Facebook to allow any web page to have the same functionality
+ * as any other object on Facebook.
+ *
+ * Visit http://ogp.me/.
+ *
+ * @author Facebook team & GitHub contributors (see https://github.com/facebook/open-graph-protocol/graphs/contributors)
+ */
 
 $base_dir = dirname( __FILE__ );
 
@@ -31,7 +42,7 @@ $html = Markdown::defaultTransform($markdown);
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
     <meta property="og:description" content="The Open Graph protocol enables any web page to become a rich object in a social graph.">
-    <meta prefix="fb: http://ogp.me/ns/fb#" property="fb:app_id" content="115190258555800">
+    <meta prefix="fb:http://ogp.me/ns/fb#" property="fb:app_id" content="115190258555800">
     <link rel="alternate" type="application/rdf+xml" href="http://ogp.me/ns/ogp.me.rdf">
     <link rel="alternate" type="text/turtle" href="http://ogp.me/ns/ogp.me.ttl">
   </head>
