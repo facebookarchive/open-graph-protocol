@@ -57,7 +57,7 @@ recommended:
  * `og:description` - A one to two sentence description of your object.
  * `og:determiner` - The word that appears before this object's title
    in a sentence. An [enum](#enum) of (a, an, the, "", auto). If `auto` is 
-   chosen, the consumer of your data should chose between "a" or "an".
+   chosen, the consumer of your data should choose between "a" or "an".
    Default is "" (blank).
  * `og:locale` - The locale these tags are marked up in.
    Of the format `language_TERRITORY`. Default is `en_US`.
