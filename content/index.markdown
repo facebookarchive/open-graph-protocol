@@ -407,6 +407,9 @@ tools. Let the Facebook group know if you've built something awesome too!
 * [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) -
   a library written in Python for parsing Open Graph protocol
   information from web sites
+* [OpenGraph.io](http://opengraph.io) -
+  a REST API to load Open Graph protocol data for sites.  When Open Graph data is not avaialble,
+  it is inferred from the site markup.  Also includes a debug tool similar to Facebook's.
 * [OpenGraph Ruby](http://github.com/intridea/opengraph) -
   Ruby Gem which parses web pages and extracts Open Graph protocol markup
 * [OpenGraph for Java](http://github.com/callumj/opengraph-java) -
