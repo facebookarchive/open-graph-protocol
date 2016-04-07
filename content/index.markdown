@@ -416,6 +416,6 @@ tools. Let the Facebook group know if you've built something awesome too!
   Perl RDFa parser which understands the Open Graph protocol
 * [Alternate WordPress OGP plugin](http://wordpress.org/plugins/wp-facebook-open-graph-protocol/) -
   A simple lightweight WordPress plugin which adds Open Graph metadata to WordPress powered sites.
-
+* [EmbedArticles](http://embedarticles.com/) - Open Graph protocol discovery implementation
 
 ---
