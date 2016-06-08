@@ -396,26 +396,16 @@ TIME, Yelp, and many many others.
 The open source community has developed a number of parsers and publishing
 tools. Let the Facebook group know if you've built something awesome too!
 
-* [Facebook Object Debugger](http://developers.facebook.com/tools/debug/) -
-  Facebook's official parser and debugger
+* [Facebook Object Debugger](http://developers.facebook.com/tools/debug/) - Facebook's official parser and debugger.
 * [Google Rich Snippets Testing Tool](http://www.google.com/webmasters/tools/richsnippets) - Open Graph protocol support in specific verticals and Search Engines.
-* [PHP Validator and Markup Generator](https://github.com/niallkennedy/open-graph-protocol-tools) -  OGP 2011 input validator and markup generator in PHP5 objects
-* [PHP Consumer](http://github.com/scottmac/opengraph) -
-  a small library for accessing of Open Graph Protocol data in PHP
-* [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) -
-  a simple parser for PHP
-* [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) -
-  a library written in Python for parsing Open Graph protocol
-  information from web sites
-* [OpenGraph Ruby](http://github.com/intridea/opengraph) -
-  Ruby Gem which parses web pages and extracts Open Graph protocol markup
-* [OpenGraph for Java](http://github.com/callumj/opengraph-java) -
-  small Java class used to represent the Open Graph protocol
-* [RDF::RDFa::Parser](
-  http://search.cpan.org/~tobyink/RDF-RDFa-Parser/lib/RDF/RDFa/Parser.pm) -
-  Perl RDFa parser which understands the Open Graph protocol
-* [Alternate WordPress OGP plugin](http://wordpress.org/plugins/wp-facebook-open-graph-protocol/) -
-  A simple lightweight WordPress plugin which adds Open Graph metadata to WordPress powered sites.
+* [PHP Validator and Markup Generator](https://github.com/niallkennedy/open-graph-protocol-tools) - OGP 2011 input validator and markup generator in PHP5 objects.
+* [PHP Consumer](http://github.com/scottmac/opengraph) - A small library for accessing of Open Graph Protocol data in PHP.
+* [OpenGraphNode in PHP](http://buzzword.org.uk/2010/opengraph/#php) - A simple parser for PHP.
+* [PyOpenGraph](http://pypi.python.org/pypi/PyOpenGraph) - A library written in Python for parsing Open Graph protocol information from web sites.
+* [OpenGraph Ruby](http://github.com/intridea/opengraph) - Ruby Gem which parses web pages and extracts Open Graph protocol markup.
+* [OpenGraph for Java](http://github.com/callumj/opengraph-java) - Small Java class used to represent the Open Graph protocol.
+* [RDF::RDFa::Parser](http://search.cpan.org/~tobyink/RDF-RDFa-Parser/lib/RDF/RDFa/Parser.pm) - Perl RDFa parser which understands the Open Graph protocol.
+* [Alternate WordPress OGP plugin](http://wordpress.org/plugins/wp-facebook-open-graph-protocol/) - A simple lightweight WordPress plugin which adds Open Graph metadata to WordPress powered sites.
 
 
 ---
