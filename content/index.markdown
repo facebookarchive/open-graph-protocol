@@ -189,6 +189,8 @@ have colons in them.
   Which track this song is.
 * `music:musician` - [profile](#type_profile) [array](#array) -
   The musician that made this song.
+* `music:tag` - [string](#string) [array](#array) -
+  Tag words associated with this song.
 
 <a name="type_music.album" href="#type_music.album">`music.album`</a>
 
@@ -201,6 +203,8 @@ have colons in them.
   The musician that made this song.
 * `music:release_date` - [datetime](#datetime) - 
   The date the album was released.
+* `music:tag` - [string](#string) [array](#array) -
+  Tag words associated with this album.
 
 <a name="type_music.playlist" href="#type_music.playlist">`music.playlist`</a>
 
@@ -208,11 +212,14 @@ have colons in them.
 * `music:song:disc`
 * `music:song:track`
 * `music:creator` - [profile](#type_profile) - The creator of this playlist.
+* `music:tag` - [string](#string) [array](#array) -
+  Tag words associated with this playlist.
 
 <a name="type_music.radio_station" href="#type_music.radio_station">`music.radio_station`</a>
 
 * `music:creator` - [profile](#type_profile) - The creator of this station.
-
+* `music:tag` - [string](#string) [array](#array) -
+  Tag words associated with this radio station.
 
 
 ### <a id="type_video" href="#type_video">Video</a>
