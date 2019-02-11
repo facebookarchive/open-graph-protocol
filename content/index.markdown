@@ -35,7 +35,7 @@ properties for every page are:
 As an example, the following is the Open Graph protocol markup for [The Rock on
 IMDB](http://www.imdb.com/title/tt0117500/):
 
-    <html prefix="og: http://ogp.me/ns#">
+    <html>
     <head>
     <title>The Rock (1996)</title>
     <meta property="og:title" content="The Rock" />
@@ -56,12 +56,12 @@ recommended:
  * `og:audio` - A URL to an audio file to accompany this object.
  * `og:description` - A one to two sentence description of your object.
  * `og:determiner` - The word that appears before this object's title
-   in a sentence. An [enum](#enum) of (a, an, the, "", auto). If `auto` is 
+   in a sentence. An [enum](#enum) of (a, an, the, "", auto). If `auto` is
    chosen, the consumer of your data should choose between "a" or "an".
    Default is "" (blank).
  * `og:locale` - The locale these tags are marked up in.
    Of the format `language_TERRITORY`. Default is `en_US`.
- * `og:locale:alternate` - An [array](#array) of other locales this page is 
+ * `og:locale:alternate` - An [array](#array) of other locales this page is
    available in.
  * `og:site_name` - If your object is part of a larger web site, the name which
    should be displayed for the overall site. e.g., "IMDb".
@@ -70,7 +70,7 @@ recommended:
 For example (line-break solely for display purposes):
 
     <meta property="og:audio" content="http://example.com/bond/theme.mp3" />
-    <meta property="og:description" 
+    <meta property="og:description"
       content="Sean Connery found fame and fortune as the
                suave, sophisticated British agent, James Bond." />
     <meta property="og:determiner" content="the" />
@@ -80,7 +80,7 @@ For example (line-break solely for display purposes):
     <meta property="og:site_name" content="IMDb" />
     <meta property="og:video" content="http://example.com/bond/trailer.swf" />
 
-The RDF schema (in [Turtle](http://en.wikipedia.org/wiki/Turtle_(syntax))) 
+The RDF schema (in [Turtle](http://en.wikipedia.org/wiki/Turtle_(syntax)))
 can be found at [ogp.me/ns](http://ogp.me/ns/ogp.me.ttl).
 
 ---
@@ -199,7 +199,7 @@ have colons in them.
   The same as `music:album:track` but in reverse.
 * `music:musician` - [profile](#type_profile) -
   The musician that made this song.
-* `music:release_date` - [datetime](#datetime) - 
+* `music:release_date` - [datetime](#datetime) -
   The date the album was released.
 
 <a name="type_music.playlist" href="#type_music.playlist">`music.playlist`</a>
@@ -230,9 +230,9 @@ have colons in them.
   Directors of the movie.
 * `video:writer` - [profile](#type_profile) [array](#array) -
   Writers of the movie.
-* `video:duration` - [integer](#integer) &gt;=1 - 
+* `video:duration` - [integer](#integer) &gt;=1 -
   The movie's length in seconds.
-* `video:release_date` - [datetime](#datetime) - 
+* `video:release_date` - [datetime](#datetime) -
   The date the movie was released.
 * `video:tag` - [string](#string) [array](#array) -
   Tag words associated with this movie.
@@ -270,11 +270,11 @@ yet are broadly used and agreed upon.
 
 <a name="type_article" href="#type_article">`article`</a> - Namespace URI: [`http://ogp.me/ns/article#`](http://ogp.me/ns/article)
 
-* `article:published_time` - [datetime](#datetime) - 
+* `article:published_time` - [datetime](#datetime) -
   When the article was first published.
-* `article:modified_time` - [datetime](#datetime) - 
+* `article:modified_time` - [datetime](#datetime) -
   When the article was last changed.
-* `article:expiration_time` - [datetime](#datetime) - 
+* `article:expiration_time` - [datetime](#datetime) -
   When the article is out of date after.
 * `article:author` - [profile](#type_profile) [array](#array) -
   Writers of the article.
@@ -332,7 +332,7 @@ The following types are used when defining attributes in Open Graph protocol.
 
 <tr>
   <td><a name="enum" href="#enum">Enum</td>
-  <td>A type consisting of bounded set of constant string values 
+  <td>A type consisting of bounded set of constant string values
   (enumeration members).
   <td>A string value that is a member of the enumeration</td>
 </tr>
@@ -351,7 +351,7 @@ The following types are used when defining attributes in Open Graph protocol.
 
 <tr>
   <td><a name="integer" href="#integer">Integer</td>
-  <td>A 32-bit signed integer. In many languages integers over 32-bits become 
+  <td>A 32-bit signed integer. In many languages integers over 32-bits become
     floats, so we limit Open Graph protocol for easy multi-language use.</td>
   <td>All literals that conform to the following formats:<br><br>
 1234<br>
@@ -378,7 +378,7 @@ The following types are used when defining attributes in Open Graph protocol.
 
 You can discuss the Open Graph Protocol in
 [the Facebook group](
-https://www.facebook.com/groups/opengraph/) or on 
+https://www.facebook.com/groups/opengraph/) or on
 [the developer mailing list](
 http://groups.google.com/group/open-graph-protocol).
 It is currently being consumed by Facebook
