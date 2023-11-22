@@ -1,7 +1,7 @@
 <?php
 /**
  * The Open Graph Protocol website
- * 
+ *
  * The Open Graph protocol enables any web page to become a rich object in a social graph.
  * For instance, this is used on Facebook to allow any web page to have the same functionality
  * as any other object on Facebook.
@@ -28,7 +28,7 @@ $html = Markdown::defaultTransform($markdown);
 ?>
 <!DOCTYPE html>
 <html>
-  <head prefix="og: http://ogp.me/ns#">
+  <head>
     <meta charset="utf-8">
     <title>The Open Graph protocol</title>
     <meta name="description" content="The Open Graph protocol enables any web page to become a rich object in a social graph.">
